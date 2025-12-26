@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+/* ===== GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0e0f12;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #ff7f50;
+}
+
+/* ===== CONTACT ===== */
+.personal-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ff7f50;
+  transition: color 0.3s, transform 0.3s;
+}
+.personal-info a:hover {
+  color: #e0673d;
+  transform: scale(1.1);
+}
+.personal-info i {
+  font-size: 1.2rem;
+}
+
+/* ===== GLASS CARDS ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.skill-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  /* Skills  */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

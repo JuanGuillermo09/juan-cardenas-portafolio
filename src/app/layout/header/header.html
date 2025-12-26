@@ -1,0 +1,35 @@
+ <!-- NAV -->
+<header class="header">
+  <nav class="navbar container">
+    <h1 class="logo">
+      <a href="#home" (click)="closeMenu()">
+        JG<span>Dev</span>
+      </a>
+    </h1>
+
+    <!-- Botón hamburguesa -->
+    <div
+      class="hamburger"
+      [class.open]="menuOpen"
+      (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul
+      class="nav-links"
+      [class.active]="menuOpen">
+      <li><a href="#home" (click)="closeMenu()">Inicio</a></li>
+      <li><a href="#about" (click)="closeMenu()">Sobre mí</a></li>
+      <li><a href="#experience" (click)="closeMenu()">Experiencia</a></li>
+      <li><a href="#projects" (click)="closeMenu()">Proyectos</a></li>
+      <li><a href="#training" (click)="closeMenu()">Formación</a></li>
+      <li><a href="#skills" (click)="closeMenu()">Habilidades</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contacto</a></li>
+      <li> <a
+          href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf"
+          class="btn" target="_blank"><strong>Mi</strong><span>CV</span></a></li>
+    </ul>
+  </nav>
+</header>

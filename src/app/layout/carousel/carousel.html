@@ -1,0 +1,22 @@
+<div class="carousel">
+    <button class="nav prev" (click)="prev()"><i
+            class="fa-solid fa-angle-left"></i></button>
+
+    <img
+        [src]="images[index]"
+        class="carousel-img"
+        alt="carousel image" />
+
+    <button class="nav next" (click)="next()"><i
+            class="fa-solid fa-angle-right"></i></button>
+
+    <!-- INDICADORES -->
+    <div class="indicators">
+        <span
+            *ngFor="let img of images; let i = index"
+            class="indicator"
+            [class.active]="i === index"
+            (click)="goTo(i)">
+        </span>
+    </div>
+</div>

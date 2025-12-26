@@ -1,0 +1,14 @@
+/* ===== ABOUT ===== */
+.about-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 70% 30%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

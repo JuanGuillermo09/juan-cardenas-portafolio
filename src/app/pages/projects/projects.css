@@ -1,0 +1,44 @@
+/* ===== PROJECTS ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.github-link i {
+  font-size: 2rem; /* aumenta el tamaño del icono 
+  color: #fff; /* color del icono */
+  transition: transform 0.3s, color 0.3s;
+}
+.github-link i:hover {
+  color: #ff7f50; /* cambia de color al pasar el mouse */
+  transform: scale(1.2); /* efecto de zoom */
+}
+.tag {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #9b59b6;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
