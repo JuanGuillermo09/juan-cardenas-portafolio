@@ -43,7 +43,8 @@
 }
 
 .btn:hover {
-  background: #e0673d;
+   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 127, 80, 0.4);
 }
 .home-right img {
   width: 600px;
