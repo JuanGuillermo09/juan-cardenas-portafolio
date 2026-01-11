@@ -68,10 +68,32 @@
   font-weight: 600;
 }
 
+.btn span:hover{
+  color: black;
+}
+
 .btn:hover{
   background-color: #fff;
 
 }
+
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff7f50; /* naranja base */
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+/* Hover */
+.theme-btn:hover i {
+  transform: scale(1.15);
+  color: #ffa07a;
+}
+
+
 
 
 /* ===== RESPONSIVE ===== */

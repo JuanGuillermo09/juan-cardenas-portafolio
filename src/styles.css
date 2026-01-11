@@ -24,22 +24,6 @@ body {
 }
 
 
-/* ===== CONTACT ===== */
-.personal-info a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: #ff7f50;
-  transition: color 0.3s, transform 0.3s;
-}
-.personal-info a:hover {
-  color: #e0673d;
-  transform: scale(1.1);
-}
-.personal-info i {
-  font-size: 1.2rem;
-}
 
 /* ===== GLASS CARDS ===== */
 .glass {
@@ -69,4 +53,27 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* ===== LIGHT MODE ===== */
+body.light-theme {
+  background: #f4f6fb;
+  color: #111;
+}
+
+body.light-theme .section-title {
+  color: #ff6b35;
+}
+
+
+
+body.light-theme .glass {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+body.light-theme .thanks {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
