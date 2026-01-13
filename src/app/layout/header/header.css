@@ -28,6 +28,7 @@
   list-style: none;
   display: flex;
   gap: 25px;
+  z-index: 100;
 }
 .nav-links li a {
   text-decoration: none;
@@ -94,6 +95,19 @@
   transform: scale(1.15);
   color: #ffa07a;
 }
+
+
+/* ===== OVERLAY MENÚ ===== */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* transparente oscuro */
+  z-index: 99;
+}
+
 
 
 

@@ -17,6 +17,14 @@
       <span></span>
     </div>
 
+    <!-- Overlay para cerrar menú -->
+    @if (menuOpen) {
+    <div
+      class="menu-overlay"
+      (click)="closeMenu()">
+    </div>
+    }
+
     <ul
       class="nav-links"
       [class.active]="menuOpen">
