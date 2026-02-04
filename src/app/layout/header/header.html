@@ -2,7 +2,7 @@
 <header class="header">
   <nav class="navbar container">
     <h1 class="logo">
-      <a href="#home" (click)="closeMenu()">
+      <a href="#home" (click)="smoothScrollToSection('home'); closeMenu()">
         JG<span>Dev</span>
       </a>
     </h1>
@@ -28,13 +28,14 @@
     <ul
       class="nav-links"
       [class.active]="menuOpen">
-      <li><a href="#home" (click)="closeMenu()">Inicio</a></li>
-      <li><a href="#about" (click)="closeMenu()">Sobre mí</a></li>
-      <li><a href="#experience" (click)="closeMenu()">Experiencia</a></li>
-      <li><a href="#projects" (click)="closeMenu()">Proyectos</a></li>
-      <li><a href="#training" (click)="closeMenu()">Formación</a></li>
-      <li><a href="#skills" (click)="closeMenu()">Habilidades</a></li>
-      <li><a href="#contact" (click)="closeMenu()">Contacto</a></li>
+      <li><a href="#home" (click)="smoothScrollToSection('home'); closeMenu()">Inicio</a></li>
+      <li><a href="#about" (click)="smoothScrollToSection('about'); closeMenu()">Sobre mí</a></li>
+      <li><a href="#experience" (click)="smoothScrollToSection('experience'); closeMenu()">Experiencia</a></li>
+      <li><a href="#projects" (click)="smoothScrollToSection('projects'); closeMenu()">Proyectos</a></li>
+      <li><a href="#training" (click)="smoothScrollToSection('training'); closeMenu()">Formación</a></li>
+      <li><a href="#skills" (click)="smoothScrollToSection('skills'); closeMenu()">Habilidades</a></li>
+      <li><a href="#contact" (click)="smoothScrollToSection('contact'); closeMenu()">Contacto</a></li>
+      <li><a href="#goodbye" (click)="smoothScrollToSection('goodbye'); closeMenu()">¡Gracias!</a></li>
       <li> <a
           href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf"
           class="btn"

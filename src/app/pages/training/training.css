@@ -1,3 +1,8 @@
+/* ===== FORMACIÓN ===== */
+.training {
+  padding-top: 100px; /* Espacio para el header fijo */
+}
+
 /* ===== DIPLOMA IMAGE ===== */
 .diploma-media {
   width: calc(100% + 50px);

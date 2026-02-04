@@ -39,6 +39,33 @@
 .nav-links li a:hover {
   color: #ff7f50;
 } 
+
+/* Enlace activo según scroll */
+.nav-links li a.active {
+  color: #ff7f50;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff7f50;
+  border-radius: 2px;
+}
+
+/* Soporte para tema claro */
+.light-theme .nav-links li a.active {
+  color: #ff6b35;
+}
+
+.light-theme .nav-links li a.active::after {
+  background: #ff6b35;
+} 
 /* ===== HAMBURGUESA ===== */
 .hamburger {
   display: none;

@@ -11,10 +11,11 @@ import { Skills } from "./pages/skills/skills";
 import { CommonModule } from '@angular/common';
 import { Training } from "./pages/training/training";
 import { Contact } from "./pages/contact/contact";
+import { Goodbye } from "./pages/goodbye/goodbye";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, ScrollTop, Home, About, Experience, Projects, Skills, CommonModule, Training, Contact],
+  imports: [Header, Footer, ScrollTop, Home, About, Experience, Projects, Skills, CommonModule, Training, Contact, Goodbye],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

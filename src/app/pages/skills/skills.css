@@ -2,6 +2,10 @@
    DIPLOMAS – ESTILOS LOCALES
 ========================= */
 
+.skills {
+  padding-top: 100px; /* Espacio para el header fijo */
+}
+
 .diploma-img {
   width: 100%;
   height: 160px;

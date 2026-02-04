@@ -1,0 +1,60 @@
+.goodbye {
+  padding-top: 100px; /* Espacio para el header fijo */
+  margin-top: 4rem;
+  padding: 6rem 0 4rem 0; /* Sin padding lateral para que el border ocupe todo el ancho */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.goodbye-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Padding solo al contenido */
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.goodbye-text {
+  flex: 1;
+}
+
+.goodbye-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goodbye-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.goodbye-text .sub {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.goodbye-image {
+  flex: 1;
+  text-align: right;
+}
+
+.goodbye-image img {
+  max-width: 260px;
+  width: 100%;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .goodbye-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .goodbye-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

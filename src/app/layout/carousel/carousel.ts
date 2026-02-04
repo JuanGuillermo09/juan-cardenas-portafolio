@@ -11,16 +11,27 @@ export class Carousel {
   @Input() images: string[] = [];
   index = 0;
 
+  // Getter para verificar si hay múltiples imágenes
+  get hasMultipleImages(): boolean {
+    return this.images.length > 1;
+  }
+
   next() {
-    this.index = (this.index + 1) % this.images.length;
+    if (this.hasMultipleImages) {
+      this.index = (this.index + 1) % this.images.length;
+    }
   }
 
   prev() {
-    this.index = (this.index - 1 + this.images.length) % this.images.length;
+    if (this.hasMultipleImages) {
+      this.index = (this.index - 1 + this.images.length) % this.images.length;
+    }
   }
 
   goTo(i: number) {
-    this.index = i;
+    if (this.hasMultipleImages) {
+      this.index = i;
+    }
   }
 
 }

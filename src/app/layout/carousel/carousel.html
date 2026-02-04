@@ -1,22 +1,21 @@
 <div class="carousel">
-    <button class="nav prev" (click)="prev()"><i
-            class="fa-solid fa-angle-left"></i></button>
+    <!-- Botones de navegación - Solo si hay múltiples imágenes -->
+    <ng-container *ngIf="hasMultipleImages">
+    <button class="nav prev" (click)="prev()"><i class="fa-solid fa-angle-left"></i></button>
+    </ng-container>
 
-    <img
-        [src]="images[index]"
-        class="carousel-img"
-        alt="carousel image" />
+    <img [src]="images[index]" class="carousel-img" alt="carousel image" />
 
-    <button class="nav next" (click)="next()"><i
-            class="fa-solid fa-angle-right"></i></button>
+    <ng-container *ngIf="hasMultipleImages">
+    <button class="nav next" (click)="next()"><i class="fa-solid fa-angle-right"></i></button>
+    </ng-container>
 
-    <!-- INDICADORES -->
+    <!-- INDICADORES - Solo si hay múltiples imágenes -->
+    <ng-container *ngIf="hasMultipleImages">
     <div class="indicators">
-        <span
-            *ngFor="let img of images; let i = index"
-            class="indicator"
-            [class.active]="i === index"
+        <span *ngFor="let img of images; let i = index" class="indicator" [class.active]="i === index"
             (click)="goTo(i)">
         </span>
     </div>
+    </ng-container>
 </div>
