@@ -1,81 +1,141 @@
- <!-- SKILLS -->
 <section id="skills" class="skills container">
-    <h2 class="section-title">Habilidades</h2>
+
+    <div class="training-hero">
+        <h1>{{ translate.t('skills.title') }} <span>{{ translate.t('skills.subtitle') }}</span></h1>
+
+        <p>{{ translate.t('skills.intro') }}</p>
+    </div>
+
     <div class="skills-grid">
+
         <div class="glass skill-card">
-            <h3>Frontend</h3>
+            <h3>{{ translate.t('skills.cat_frontend') }}</h3>
             <ul>
                 <li>Angular 16+</li>
                 <li>HTML5 / CSS3 / SCSS</li>
                 <li>JavaScript / TypeScript</li>
                 <li>Angular Material</li>
-                <li>Tailwind</li>
-                <li>bootstrap </li>
-            </ul>
-        </div>
-        <div class="glass skill-card">
-            <h3>Backend</h3>
-            <ul>
-                <li>Node.js 22</li>
-                <li>Express (MVC)</li>
-                <li>JWT / Multer</li>
-                <li>APIs REST</li>
-            </ul>
-        </div>
-        <div class="glass skill-card">
-            <h3>Desarrollo Full Stack</h3>
-            <ul>
-                <li>Arquitectura MVC</li>
-                <li>Consumo de APIs REST</li>
-                <li>Microservicios</li>
-                <li>Dependency Injection (DI)</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>{{ translate.t('skills.responsive') }}</li>
+                <li>{{ translate.t('skills.rest_api') }}</li>
+                <li>{{ translate.t('skills.reactive_forms') }}</li>
+                <li>Angular Routing</li>
+                <li>RxJS</li>
+                <li>{{ translate.t('skills.reusable_comp') }}</li>
             </ul>
         </div>
 
         <div class="glass skill-card">
-            <h3>Bases de Datos</h3>
+            <h3>{{ translate.t('skills.cat_backend') }}</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js (MVC)</li>
+                <li>APIs REST</li>
+                <li>JWT Authentication</li>
+                <li>Multer</li>
+                <li>Middleware</li>
+                <li>Sequelize ORM</li>
+                <li>{{ translate.t('skills.role_permissions') }}</li>
+                <li>{{ translate.t('skills.cors_config') }}</li>
+                <li>{{ translate.t('skills.env_vars') }}</li>
+                <li>{{ translate.t('skills.file_upload') }}</li>
+            </ul>
+        </div>
+
+        <div class="glass skill-card">
+            <h3>{{ translate.t('skills.cat_fullstack') }}</h3>
+            <ul>
+                <li>{{ translate.t('skills.mvc_arch') }}</li>
+                <li>{{ translate.t('skills.layered_arch') }}</li>
+                <li>{{ translate.t('skills.fe_be_integration') }}</li>
+                <li>{{ translate.t('skills.enterprise_crud') }}</li>
+                <li>{{ translate.t('skills.enterprise_dev') }}</li>
+                <li>{{ translate.t('skills.realtime_dash') }}</li>
+                <li>{{ translate.t('skills.auth_authorization') }}</li>
+                <li>{{ translate.t('skills.component_dev') }}</li>
+                <li>{{ translate.t('skills.restful_design') }}</li>
+                <li>{{ translate.t('skills.problem_solving') }}</li>
+            </ul>
+        </div>
+
+        <div class="glass skill-card">
+            <h3>{{ translate.t('skills.cat_databases') }}</h3>
             <ul>
                 <li>SQL Server</li>
                 <li>MySQL</li>
-                <li>Procedimientos almacenados</li>
-                <li>Tablas temporales</li>
+                <li>{{ translate.t('skills.stored_procedures') }}</li>
+                <li>{{ translate.t('skills.temp_tables') }}</li>
+                <li>{{ translate.t('skills.advanced_sql') }}</li>
+                <li>{{ translate.t('skills.relational_db') }}</li>
+                <li>{{ translate.t('skills.sql_integration') }}</li>
+                <li>{{ translate.t('skills.sql_optimization') }}</li>
+                <li>{{ translate.t('skills.db_modeling') }}</li>
+                <li>SQL Server Management Studio (SSMS)</li>
             </ul>
         </div>
+
         <div class="glass skill-card">
-            <h3>Automatización</h3>
+            <h3>{{ translate.t('skills.cat_automation') }}</h3>
             <ul>
                 <li>Power Apps</li>
                 <li>Power Automate</li>
                 <li>Excel + VBA</li>
+                <li>{{ translate.t('skills.process_automation') }}</li>
+                <li>{{ translate.t('skills.excel_sql_integration') }}</li>
+                <li>{{ translate.t('skills.digitization') }}</li>
             </ul>
         </div>
+
         <div class="glass skill-card">
-            <h3>Despliegue y Producción</h3>
+            <h3>{{ translate.t('skills.cat_deployment') }}</h3>
             <ul>
-                <li>Internet Information Services</li>
-                <li>Firebase Hosting</li>
+                <li>IIS</li>
                 <li>PM2</li>
-                <li>Configuración SPA, rutas y CORS</li>
-                <li>Manejo de variables de entorno</li>
+                <li>Firebase Hosting</li>
+                <li>{{ translate.t('skills.spa_config') }}</li>
+                <li>{{ translate.t('skills.env_vars') }}</li>
+                <li>{{ translate.t('skills.route_cors') }}</li>
+                <li>{{ translate.t('skills.prod_environments') }}</li>
+                <li>{{ translate.t('skills.fullstack_deploy') }}</li>
+                <li>{{ translate.t('skills.server_config') }}</li>
             </ul>
         </div>
+
         <div class="glass skill-card">
-            <h3>Herramientas</h3>
+            <h3>{{ translate.t('skills.cat_tools') }}</h3>
             <ul>
-                <li>Visual studio code</li>
-                <li>Visual studio</li>
-                <li>Figma</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio</li>
+                <li>Git</li>
+                <li>GitHub</li>
                 <li>Postman</li>
+                <li>Figma</li>
+                <li>{{ translate.t('skills.version_control') }}</li>
+                <li>{{ translate.t('skills.repo_management') }}</li>
             </ul>
         </div>
+
         <div class="glass skill-card">
-            <h3>En formacion</h3>
+            <h3>{{ translate.t('skills.cat_languages') }}</h3>
+            <ul>
+                <li>{{ translate.t('skills.spanish') }}</li>
+                <li>{{ translate.t('skills.english') }}</li>
+            </ul>
+        </div>
+
+        <div class="glass skill-card">
+            <h3>{{ translate.t('skills.cat_learning') }}</h3>
             <ul>
                 <li>C#</li>
                 <li>Unity</li>
-                <li>Ingles</li>
-                <!-- <li>Unreal Engine</li> -->
+                <li>{{ translate.t('skills.microservices') }}</li>
+                <li>{{ translate.t('skills.scalable_arch') }}</li>
             </ul>
         </div>
+
     </div>
+
 </section>
+
+<app-goodbye></app-goodbye>

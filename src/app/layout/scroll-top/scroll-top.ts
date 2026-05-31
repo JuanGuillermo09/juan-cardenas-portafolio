@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, Renderer2, ElementRef, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-top',
@@ -9,12 +9,9 @@ import { Component, HostListener, Renderer2, ElementRef, OnInit } from '@angular
 })
 export class ScrollTop {
   showButton = false;
-  isAtBottom = false;
-
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  bottomOffset = 20;
 
   ngOnInit() {
-    // Verificar estado inicial al cargar
     this.checkScrollPosition();
   }
 
@@ -24,31 +21,16 @@ export class ScrollTop {
   }
 
   checkScrollPosition() {
-    const scrollY = window.scrollY;
-    this.showButton = scrollY > 300;
-    
-    // Detectar si estamos cerca del final
-    const scrollPosition = scrollY + window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    this.isAtBottom = scrollPosition >= documentHeight - 100;
-    
-    // Ajustar posición dinámicamente
-    this.updateButtonPosition();
-  }
-
-  updateButtonPosition() {
-    const button = this.el.nativeElement.querySelector('.scroll-top-btn');
-    if (button) {
-      if (this.isAtBottom) {
-        this.renderer.setStyle(button, 'bottom', '100px');
-      } else {
-        this.renderer.setStyle(button, 'bottom', '20px');
-      }
+    this.showButton = window.scrollY > 300;
+    const remaining = document.documentElement.scrollHeight - (window.innerHeight + window.scrollY);
+    if (remaining < 120) {
+      this.bottomOffset = 20 + (120 - remaining) * 0.5;
+    } else {
+      this.bottomOffset = 20;
     }
   }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
 }

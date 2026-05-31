@@ -1,119 +1,57 @@
-import { Component, inject, Renderer2, ElementRef, OnDestroy } from '@angular/core';
-import { fromEvent, Subscription } from 'rxjs';
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { HeaderTranslateService } from '../../services/translate/header-translate.service';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.html',
   styleUrl: './header.css',
+  providers: [HeaderTranslateService],
 })
-export class Header implements OnDestroy {
+export class Header {
+  translate = inject(HeaderTranslateService);
 
   menuOpen = false;
-  isDarkMode = true; // 🌙 por defecto
-  activeSection = 'home'; // Sección activa actual
-  private scrollSubscription: Subscription | null = null;
+  isDarkMode = true;
+  activeSection = '';
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  private observer: IntersectionObserver | null = null;
 
   ngOnInit() {
     const theme = localStorage.getItem('theme');
-
     if (theme === 'light') {
       this.isDarkMode = false;
       document.body.classList.add('light-theme');
     }
-
-    // Inicializar scroll spy
     this.initScrollSpy();
   }
 
   ngOnDestroy() {
-    if (this.scrollSubscription) {
-      this.scrollSubscription.unsubscribe();
-    }
+    this.observer?.disconnect();
   }
 
-  initScrollSpy() {
-    this.scrollSubscription = fromEvent(window, 'scroll').subscribe(() => {
-      this.updateActiveSection();
-    });
+  private initScrollSpy() {
+    const sections = document.querySelectorAll<HTMLElement>('section[id]');
+    if (!sections.length) return;
 
-    // Actualizar también al cargar la página
-    setTimeout(() => this.updateActiveSection(), 100);
-  }
-
-  updateActiveSection() {
-    const sections = [
-      'home',
-      'about', 
-      'experience',
-      'projects',
-      'training',
-      'skills',
-      'contact',
-      'goodbye'
-    ];
-
-    const scrollPosition = window.scrollY + 100;
-
-    for (const section of sections) {
-      const element = document.getElementById(section);
-      if (element) {
-        const { offsetTop, offsetHeight } = element;
-        
-        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-          if (this.activeSection !== section) {
-            this.activeSection = section;
-            this.updateActiveLink();
+    this.observer = new IntersectionObserver(
+      entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            this.activeSection = entry.target.id;
           }
-          break;
         }
-      }
-    }
+      },
+      { rootMargin: '-40% 0px -55% 0px' }
+    );
+
+    sections.forEach(s => this.observer!.observe(s));
   }
 
-  updateActiveLink() {
-    // Remover clase activa de todos los enlaces
-    const allLinks = this.el.nativeElement.querySelectorAll('.nav-links li a');
-    allLinks.forEach((link: HTMLElement) => {
-      this.renderer.removeClass(link, 'active');
-    });
-
-    // Agregar clase activa al enlace correspondiente
-    const activeLink = this.el.nativeElement.querySelector(`.nav-links li a[href="#${this.activeSection}"]`);
-    if (activeLink) {
-      this.renderer.addClass(activeLink, 'active');
-    }
-  }
-
-
-  // Método para scroll suave lento sin modificar espacios
-  smoothScrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const startPosition = window.pageYOffset;
-      const targetPosition = element.offsetTop;
-      const distance = targetPosition - startPosition;
-      const duration = 1000; // 1 segundo para transición suave
-      
-      let start: number | null = null;
-      
-      const animation = (currentTime: number) => {
-        if (start === null) start = currentTime;
-        const timeElapsed = currentTime - start;
-        const progress = Math.min(timeElapsed / duration, 1);
-        const easeProgress = 1 - Math.pow(1 - progress, 3); // Easing suave
-        
-        window.scrollTo(0, startPosition + (distance * easeProgress));
-        
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        }
-      };
-      
-      requestAnimationFrame(animation);
-    }
+  isActive(route: string): boolean {
+    const sectionId = route.replace('/', '');
+    return this.activeSection === sectionId;
   }
 
   toggleMenu() {
@@ -124,10 +62,8 @@ export class Header implements OnDestroy {
     this.menuOpen = false;
   }
 
-
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
-
     if (this.isDarkMode) {
       document.body.classList.remove('light-theme');
       localStorage.setItem('theme', 'dark');
@@ -136,5 +72,4 @@ export class Header implements OnDestroy {
       localStorage.setItem('theme', 'light');
     }
   }
-
 }

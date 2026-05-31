@@ -1,13 +1,16 @@
-<section id="projects" class="projects container">
-  <h2 class="section-title">Proyectos</h2>
+<section id="projects" class="projects">
+  <div class="projects-hero">
+    <h1>{{ translate.t('projects.title') }} <span>{{ translate.t('projects.subtitle') }}</span></h1>
+    <p>{{ translate.t('projects.intro') }}</p>
+  </div>
 
-  <div class="project-grid">
+  <div class="container">
+    <div class="project-grid">
 
-    <!-- Proyecto 1 -->
-    <div class="project-card glass">
-      <h3>World Pizza Web</h3>
+      <div class="project-card glass">
+        <h3>World Pizza Web</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'world-pizza/World-Pizza-1.png',
         'world-pizza/World-Pizza-2.png',
         'world-pizza/World-Pizza-3.png',
@@ -16,23 +19,23 @@
         'world-pizza/World-Pizza-6.png'
       ]"></app-carousel>
 
-      <p>Página web responsive estilo restaurante, moderna y rápida.</p>
+        <p>{{ translate.t('projects.world_pizza') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JS</span>
-        <a href="https://github.com/JuanGuillermo09/World-Pizza.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
+          <a href="https://github.com/JuanGuillermo09/World-Pizza.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 2 -->
-    <div class="project-card glass">
-      <h3>Spotify Web</h3>
+      <div class="project-card glass">
+        <h3>Spotify Web</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'spotify/Spotify-1.png',
         'spotify/Spotify-2.png',
         'spotify/Spotify-3.png',
@@ -40,25 +43,25 @@
         'spotify/Spotify-5.png'
       ]"></app-carousel>
 
-      <p>Proyecto tipo Spotify con reproducción local y autenticación.</p>
+        <p>{{ translate.t('projects.spotify') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">NodeJS</span>
-        <a href="https://github.com/JuanGuillermo09/SPOTIFY.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">NodeJS</span>
+          <a href="https://github.com/JuanGuillermo09/SPOTIFY.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 3 -->
-    <div class="project-card glass">
-      <h3>Mis Nota Web</h3>
+      <div class="project-card glass">
+        <h3>Mis Nota Web</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'mis-nota/Mis-notas-1.png',
         'mis-nota/Mis-notas-2.png',
         'mis-nota/Mis-notas-3.png',
@@ -66,25 +69,25 @@
         'mis-nota/Mis-notas-5.png'
       ]"></app-carousel>
 
-      <p>Aplicación Angular monorepo para gestión pública y privada.</p>
+        <p>{{ translate.t('projects.mis_nota') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular Monorepo</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">Tailwind</span>
-        <a href="https://github.com/JuanGuillermo09/proyecto-prueba.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular Monorepo</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">Tailwind</span>
+          <a href="https://github.com/JuanGuillermo09/proyecto-prueba.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 4 (EL QUE FALTABA 😎) -->
-    <div class="project-card glass">
-      <h3>AdminApp</h3>
+      <div class="project-card glass">
+        <h3>AdminApp</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'AdminApp/AdminApp-1.png',
         'AdminApp/AdminApp-2.png',
         'AdminApp/AdminApp-3.png',
@@ -98,28 +101,25 @@
         'AdminApp/AdminApp-11.png'
       ]"></app-carousel>
 
-      <p>
-        Aplicación web y móvil para gestión de productos y ventas.
-        Calcula ganancias y muestra datos en tiempo real.
-      </p>
+        <p>{{ translate.t('projects.admin_app') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Ionic + Angular</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">Firebase</span>
-        <a href="https://github.com/JuanGuillermo09/admin-app.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Ionic + Angular</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">Firebase</span>
+          <a href="https://github.com/JuanGuillermo09/admin-app.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 5 -->
-    <div class="project-card glass">
-      <h3>Mi Portafolio Web</h3>
+      <div class="project-card glass">
+        <h3>Mi Portafolio Web</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'mi-portafolio/Mi-Portafolio-1.png',
         'mi-portafolio/Mi-Portafolio-2.png',
         'mi-portafolio/Mi-Portafolio-3.png',
@@ -135,52 +135,49 @@
         'mi-portafolio/Mi-Portafolio-13.png'
       ]"></app-carousel>
 
-      <p>Mi portafolio web responsive.</p>
+        <p>{{ translate.t('projects.portfolio') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <a href="https://github.com/JuanGuillermo09/juan-cardenas-portafolio.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <a
+            href="https://github.com/JuanGuillermo09/juan-cardenas-portafolio.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 6 -->
-    <div class="project-card glass">
-      <h3>Flappy Bird</h3>
+      <div class="project-card glass">
+        <h3>Flappy Bird</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'flappy-bird/flappy-bird-1.png',
         'flappy-bird/flappy-bird-2.png',
         'flappy-bird/flappy-bird-3.png',
         'flappy-bird/flappy-bird-4.png'
       ]"></app-carousel>
 
-      <p>
-        Proyecto de videojuego 2D desarrollado para reforzar conceptos de
-        programación orientada a objetos, control de físicas, colisiones
-        y lógica de juego.
-      </p>
+        <p>{{ translate.t('projects.flappy_bird') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Unity</span>
-        <span class="tag">C#</span>
-        <span class="tag">POO</span>
-        <span class="tag">2D Game</span>
-        <a href="https://github.com/JuanGuillermo09/Flappy-Bird.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">{{ translate.t('projects.tag_oop') }}</span>
+          <span class="tag">2D Game</span>
+          <a href="https://github.com/JuanGuillermo09/Flappy-Bird.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 7 -->
-    <div class="project-card glass">
-      <h3>BanqueSoft Cliente</h3>
+      <div class="project-card glass">
+        <h3>BanqueSoft Cliente</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'banquesoft-cliente/banquesoft-cliente-1.png',
         'banquesoft-cliente/banquesoft-cliente-2.png',
         'banquesoft-cliente/banquesoft-cliente-3.png',
@@ -199,32 +196,29 @@
         'banquesoft-cliente/banquesoft-cliente-16.png'
       ]"></app-carousel>
 
-      <p>Aplicación web orientada al cliente para la gestión de eventos, que
-        permite autenticación de usuarios, agendamiento de citas, generación de
-        cotizaciones con descarga en PDF, visualización de promociones y envío
-        automático de confirmaciones por correo electrónico.</p>
+        <p>{{ translate.t('projects.banquesoft_client') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">NodeJS</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Bootstrap v5.3</span>
-        <span class="tag">Angular material</span>
-        <span class="tag">SweetAlert2</span>
-        <a href="https://github.com/JuanGuillermo09/Proyecto-BanqueSoft.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">NodeJS</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Bootstrap v5.3</span>
+          <span class="tag">Angular material</span>
+          <span class="tag">SweetAlert2</span>
+          <a href="https://github.com/JuanGuillermo09/Proyecto-BanqueSoft.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 8 -->
-    <div class="project-card glass">
-      <h3>BanqueSoft Administrador</h3>
+      <div class="project-card glass">
+        <h3>BanqueSoft Administrador</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'banquesoft-administrador/banquesoft-administrador-1.png',
         'banquesoft-administrador/banquesoft-administrador-2.png',
         'banquesoft-administrador/banquesoft-administrador-3.png',
@@ -252,60 +246,54 @@
         'banquesoft-administrador/banquesoft-administrador-25.png'
       ]"></app-carousel>
 
-      <p>Aplicación web administrativa para la organización de eventos, con
-        gestión de clientes y administradores, control de citas y
-        notificaciones, manejo de proveedores y menaje, definición de servicios
-        y precios, creación de contratos y generación de recibos en PDF.</p>
+        <p>{{ translate.t('projects.banquesoft_admin') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">NodeJS</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Bootstrap v5.3</span>
-        <span class="tag">Angular material</span>
-        <span class="tag">SweetAlert2</span>
-        <a href="https://github.com/JuanGuillermo09/Proyecto-BanqueSoft.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">NodeJS</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Bootstrap v5.3</span>
+          <span class="tag">Angular material</span>
+          <span class="tag">SweetAlert2</span>
+          <a href="https://github.com/JuanGuillermo09/Proyecto-BanqueSoft.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 9 -->
-    <div class="project-card glass">
-      <h3>Flask Web CRUD</h3>
+      <div class="project-card glass">
+        <h3>Flask Web CRUD</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'Flask-Web-CRUD/Flask-Web-CRUD-1.png',
         'Flask-Web-CRUD/Flask-Web-CRUD-2.png'
       ]"></app-carousel>
 
-      <p>Aplicación web full stack con autenticación de usuarios y gestión de datos.
-        Desarrollada como prueba técnica para posición Frontend, implementando un sistema
-        CRUD completo con base de datos local SQLite, validaciones frontend/backend y
-        empaquetado como ejecutable .exe para distribución sin dependencias.</p>
+        <p>{{ translate.t('projects.flask_crud') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Python</span>
-        <span class="tag">Flask</span>
-        <span class="tag">SQLite</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JS (Vanilla JS)</span>
-        <span class="tag">PyInstaller (generación de ejecutable .exe)</span>
-        <a href="https://github.com/JuanGuillermo09/Flask-Web-CRUD.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS (Vanilla JS)</span>
+          <span class="tag">{{ translate.t('projects.tag_pyinstaller') }}</span>
+          <a href="https://github.com/JuanGuillermo09/Flask-Web-CRUD.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 10 -->
-    <div class="project-card glass">
-      <h3>Sistema de Gestión de Ofertas Dinámicas (Separatas POS)</h3>
+      <div class="project-card glass">
+        <h3>Sistema de Gestión de Ofertas Dinámicas (Separatas POS)</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
           'separatas-POS/separatas-POS-1.png',
           'separatas-POS/separatas-POS-2.png',
           'separatas-POS/separatas-POS-3.png',
@@ -322,75 +310,73 @@
           'separatas-POS/separatas-POS-14.png'
       ]"></app-carousel>
 
-      <p>Sistema full stack para gestión de promociones dinámicas en sistemas POS.
-        Desarrollado como prueba técnica avanzada, implementando arquitectura extensible
-        para diferentes tipos de descuentos, validación de traslape de fechas, containerización
-        completa con Docker y pipeline CI/CD automatizado con GitHub Actions para despliegue.</p>
+        <p>{{ translate.t('projects.separatas_pos') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">NodeJS</span>
-        <span class="tag">Angular material</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Docker</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">GitHub Actions</span>
-        <span class="tag">CI/CD</span>
-        <span class="tag">SweetAlert2</span>
-        <a href="https://github.com/JuanGuillermo09/separatas.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">NodeJS</span>
+          <span class="tag">Angular material</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">SweetAlert2</span>
+          <a href="https://github.com/JuanGuillermo09/separatas.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Proyecto 11 -->
-    <div class="project-card glass">
-      <h3>Calculadora</h3>
+      <div class="project-card glass">
+        <h3>Calculadora</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'calculadora/Calculadora.png'
       ]"></app-carousel>
 
-      <p>Calculadora web con operaciones básicas.</p>
+        <p>{{ translate.t('projects.calculadora') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JS</span>
-        <a href="https://github.com/JuanGuillermo09/Calculadora.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
+          <a href="https://github.com/JuanGuillermo09/Calculadora.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
+      <div class="project-card glass">
+        <h3>Monetary Control</h3>
 
-    <!-- Proyecto 12 -->
-    <div class="project-card glass">
-      <h3>Monetary Control</h3>
-
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'monetary-control/desarrollo.avif'
       ]"></app-carousel>
 
-      <p>Proyecto en desarrollo, enfocado en integración frontend-backend y gestión de base de datos con buenas
-        prácticas de arquitectura y seguridad.</p>
+        <p>{{ translate.t('projects.monetary_control') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular</span>
-        <span class="tag">C#</span>
-        <span class="tag">SQL Server</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">SweetAlert2</span>
-        <a href="https://github.com/JuanGuillermo09/MonetaryControl.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">C#</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">SweetAlert2</span>
+          <a href="https://github.com/JuanGuillermo09/MonetaryControl.git"
+            target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
+
     </div>
-
-
   </div>
 </section>
+
+<app-goodbye></app-goodbye>

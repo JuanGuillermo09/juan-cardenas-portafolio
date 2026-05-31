@@ -56,7 +56,7 @@ body {
 }
 
 
-/* ===== LIGHT MODE ===== */
+/* ===== LIGHT MODE (complete) ===== */
 body.light-theme {
   background: #f4f6fb;
   color: #111;
@@ -66,14 +66,111 @@ body.light-theme .section-title {
   color: #ff6b35;
 }
 
-
-
 body.light-theme .glass {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+body.light-theme .footer {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .exp-card ul li::before {
+  color: #ff6b35;
+}
+
+body.light-theme .exp-card ul li ul li::before {
+  color: #9b59b6;
+}
+
+body.light-theme .skill-card h3 {
+  color: #ff6b35;
+}
+
+body.light-theme .skill-card ul li::before {
+  color: #ff6b35;
+}
+
+body.light-theme .goodbye {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme .scroll-top-btn {
+  background-color: #ff6b35;
+}
+
+body.light-theme .scroll-top-btn:hover {
+  background-color: #e05525;
+}
+
+body.light-theme .tag {
+  background: #7c3aed;
+}
+
+body.light-theme .btn-diploma {
+  background: linear-gradient(135deg, #ff6b35, #e05525);
+}
+
+body.light-theme .experience-hero p,
+body.light-theme .projects-hero p,
+body.light-theme .training-hero p {
+  opacity: 0.9;
+}
 
 body.light-theme .thanks {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
+
+body.light-theme .social-links a,
+body.light-theme .social-links a i {
+  color: #333;
+}
+
+body.light-theme .social-links a:hover,
+body.light-theme .social-links a:hover i {
+  color: #ff7f50;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glass,
+.project-card,
+.exp-card,
+.skill-card {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.exp-card:nth-child(2) { animation-delay: 0.1s; }
+.exp-card:nth-child(3) { animation-delay: 0.2s; }
+
+.project-card:nth-child(1) { animation-delay: 0.05s; }
+.project-card:nth-child(2) { animation-delay: 0.1s; }
+.project-card:nth-child(3) { animation-delay: 0.15s; }
+.project-card:nth-child(4) { animation-delay: 0.2s; }
+.project-card:nth-child(5) { animation-delay: 0.25s; }
+.project-card:nth-child(6) { animation-delay: 0.3s; }
+.project-card:nth-child(7) { animation-delay: 0.35s; }
+.project-card:nth-child(8) { animation-delay: 0.4s; }
+.project-card:nth-child(9) { animation-delay: 0.45s; }
+.project-card:nth-child(10) { animation-delay: 0.5s; }
+.project-card:nth-child(11) { animation-delay: 0.55s; }
+.project-card:nth-child(12) { animation-delay: 0.6s; }
+
+.skill-card:nth-child(2) { animation-delay: 0.1s; }
+.skill-card:nth-child(3) { animation-delay: 0.15s; }
+.skill-card:nth-child(4) { animation-delay: 0.2s; }
+.skill-card:nth-child(5) { animation-delay: 0.25s; }
+.skill-card:nth-child(6) { animation-delay: 0.3s; }
+.skill-card:nth-child(7) { animation-delay: 0.35s; }
+.skill-card:nth-child(8) { animation-delay: 0.4s; }
+.skill-card:nth-child(9) { animation-delay: 0.45s; }

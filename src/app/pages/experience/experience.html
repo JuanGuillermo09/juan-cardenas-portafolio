@@ -1,154 +1,106 @@
- <!-- EXPERIENCE -->
 <section id="experience" class="experience container">
-    <h2 class="section-title">Experiencia</h2>
-    <div class="glass exp-card">
-        <h3>Desarrollador de Proyectos Personales</h3>
-        <strong>Experiencia Autodidacta · Freelance /
-            Personales</strong>
-        <p><em>Agosto 2025 – Actualidad</em></p>
-        <p><em>Bello, Antioquia, Colombia · Remoto</em></p>
+    <div class="experience-hero">
+        <h1>{{ translate.t('experience.title') }} <span>{{ translate.t('experience.subtitle') }}</span></h1>
 
-        <p>
-            <em>
-                Durante este periodo, gestioné y desarrollé proyectos personales
-                con el objetivo de fortalecer mis habilidades en desarrollo web
-                y software, aplicando metodologías de desarrollo, control de
-                versiones, integración backend y despliegue de aplicaciones.
-            </em>
-        </p>
+        <p>{{ translate.t('experience.intro') }}</p>
+    </div>
+
+    <div class="glass exp-card">
+        <h3>{{ translate.t('experience.conexiones_title') }}</h3>
+        <strong>{{ translate.t('experience.conexiones_company') }}</strong>
+        <p><em>{{ translate.t('experience.conexiones_date') }}</em></p>
+        <p><em>{{ translate.t('experience.conexiones_location') }}</em></p>
+
+        <p><em>{{ translate.t('experience.conexiones_desc') }}</em></p>
 
         <ul>
-            <li>
-                Proyectos destacados:
+            <li><strong>{{ translate.t('experience.conexiones_achievements') }}</strong></li>
+            <li><strong>{{ translate.t('experience.conexiones_proj_title') }}</strong>
                 <ul>
-                    <li>
-                        Portafolio Web Personal (Angular): <br>
-                        Desarrollo completo de mi portafolio web disponible en
-                        👉
-                        <a href="https://juan-cardenas-portafolio.web.app/"
-                            target="_blank">
-                            juan-cardenas-portafolio.web.app
-                        </a>.
-                        Incluye secciones de presentación, habilidades,
-                        proyectos, y enlaces a repositorios. Implementa diseño
-                        responsive, navegación SPA y buenas prácticas de UI/UX.
-                        Control de versiones con Git y repositorio público en
-                        GitHub.
-
-                    </li>
-
-                    <li>
-                        Monetary Control (Angular + C# + SQL): <br>
-                        Proyecto en desarrollo, enfocado en integración
-                        frontend-backend y gestión de base de datos con buenas
-                        prácticas de arquitectura y seguridad.
-
-                    </li>
-
-                    <li>
-                        Videojuego 2D tipo Flappy Bird (Unity + C#): <br>
-                        Desarrollo completo de un videojuego aplicando
-                        principios de programación orientada a objetos para el
-                        control de físicas, colisiones, sistema de puntuación y
-                        estados del juego. El proyecto cuenta con repositorio en
-                        GitHub, código fuente, build ejecutable y APK funcional
-                        para Android.
-                    </li>
+                    <li>{{ translate.t('experience.conexiones_proj_1') }}</li>
+                    <li>{{ translate.t('experience.conexiones_proj_2') }}</li>
+                    <li>{{ translate.t('experience.conexiones_proj_3') }}</li>
+                    <li>{{ translate.t('experience.conexiones_proj_4') }}</li>
+                    <li>{{ translate.t('experience.conexiones_proj_5') }}</li>
+                    <li>{{ translate.t('experience.conexiones_proj_6') }}</li>
                 </ul>
             </li>
+            <li>{{ translate.t('experience.conexiones_opt') }}</li>
+        </ul>
+    </div>
 
-            <li>Responsabilidades y logros:
+    <div class="glass exp-card">
+        <h3>{{ translate.t('experience.freelance_title') }}</h3>
+        <strong>{{ translate.t('experience.freelance_type') }}</strong>
+        <p><em>{{ translate.t('experience.freelance_date') }}</em></p>
+        <p><em>{{ translate.t('experience.freelance_location') }}</em></p>
+
+        <p><em>{{ translate.t('experience.freelance_desc') }}</em></p>
+
+        <ul>
+            <li><strong>{{ translate.t('experience.highlighted_projects') }}</strong>
                 <ul>
-                    <li>Gestión integral de proyectos personales: análisis,
-                        diseño, desarrollo, pruebas y despliegue.</li>
-                    <li>Aplicación de buenas prácticas de desarrollo web y
-                        software.</li>
-                    <li>Uso constante de Git y GitHub para control de versiones
-                        y documentación de código.</li>
-                    <li>Aprendizaje autodidacta continuo en nuevas tecnologías y
-                        metodologías de desarrollo de software.</li>
+                    <li>{{ translate.t('experience.freelance_proj_1') }}</li>
+                    <li>{{ translate.t('experience.freelance_proj_2') }}</li>
+                    <li>{{ translate.t('experience.freelance_proj_3') }}</li>
+                </ul>
+            </li>
+            <li><strong>{{ translate.t('experience.responsibilities') }}</strong>
+                <ul>
+                    <li>{{ translate.t('experience.resp_1') }}</li>
+                    <li>{{ translate.t('experience.resp_2') }}</li>
+                    <li>{{ translate.t('experience.resp_3') }}</li>
                 </ul>
             </li>
         </ul>
     </div>
-    <div class="glass exp-card">
-        <h3>Somex Nutrición S.A.S.</h3>
-        <strong>Aprendiz TIC – Área de Proyectos · Contrato de
-            prácticas</strong>
-        <p><em>Febrero 2025 – Agosto 2025 · 7 meses</em></p>
-        <p><em>Medellín, Antioquia, Colombia · Híbrido</em></p>
 
-        <p>
-            <em>
-                Durante mi etapa en Somex Nutrición S.A.S., participé en el
-                desarrollo y soporte de aplicaciones internas del área de
-                Proyectos, introduciendo nuevas tecnologías en la empresa y
-                liderando de forma autónoma los desarrollos asignados.
-            </em>
-        </p>
+    <div class="glass exp-card">
+        <h3>{{ translate.t('experience.somex_title') }}</h3>
+        <strong>{{ translate.t('experience.somex_type') }}</strong>
+        <p><em>{{ translate.t('experience.somex_date') }}</em></p>
+        <p><em>{{ translate.t('experience.somex_location') }}</em></p>
+
+        <p><em>{{ translate.t('experience.somex_desc') }}</em></p>
 
         <ul>
-            <li>Desarrollo Web y Backend:
+            <li><strong>{{ translate.t('experience.somex_web_title') }}</strong>
                 <ul>
-                    <li>Desarrollé e implementé un software de
-                        inspección de lockers con Angular 19, Node.js 22
-                        y SQL Server.</li>
-                    <li>Integré autenticación JWT, gestión de roles
-                        (guarda de seguridad, colaborador, testigo y
-                        encargado) y firmas digitales con
-                        <code>@almothafar/angular-signature-pad</code>.</li>
-                    <li>Construcción de API REST en MVC, manejo de
-                        archivos con Multer y procedimientos almacenados
-                        en SQL Server.</li>
+                    <li>{{ translate.t('experience.somex_web_1') }}</li>
+                    <li>{{ translate.t('experience.somex_web_2') }}</li>
+                    <li>{{ translate.t('experience.somex_web_3') }}</li>
                 </ul>
             </li>
-
-            <li>Despliegue y Arquitectura:
+            <li><strong>{{ translate.t('experience.somex_deploy_title') }}</strong>
                 <ul>
-                    <li>Configuración del entorno productivo con IIS y
-                        PM2 para asegurar disponibilidad continua.</li>
-                    <li>Integración de backend, frontend e imágenes
-                        mediante rutas seguras y controladas.</li>
+                    <li>{{ translate.t('experience.somex_deploy_1') }}</li>
+                    <li>{{ translate.t('experience.somex_deploy_2') }}</li>
                 </ul>
             </li>
-
-            <li>Automatización con Excel y SQL:
+            <li><strong>{{ translate.t('experience.somex_auto_title') }}</strong>
                 <ul>
-                    <li>Desarrollo de macros en VBA conectadas a SQL
-                        Server permitiendo operaciones CRUD automáticas
-                        desde hojas de cálculo.</li>
-                    <li>Creación de varios procedimientos almacenados
-                        que integran datos masivos desde Excel.</li>
+                    <li>{{ translate.t('experience.somex_auto_1') }}</li>
+                    <li>{{ translate.t('experience.somex_auto_2') }}</li>
                 </ul>
             </li>
-
-            <li>Power Apps y Power Automate:
+            <li><strong>{{ translate.t('experience.somex_powerapps_title') }}</strong>
                 <ul>
-                    <li>Creación de dos aplicaciones empresariales:
+                    <li>{{ translate.t('experience.somex_powerapps_1') }}
                         <ul>
-                            <li>Control de correspondencia con firmas
-                                electrónicas y notificaciones por
-                                correo.</li>
-                            <li>Gestión de préstamos y devoluciones de
-                                lockers con registro digital y firma del
-                                colaborador.</li>
+                            <li>{{ translate.t('experience.somex_powerapps_1a') }}</li>
+                            <li>{{ translate.t('experience.somex_powerapps_1b') }}</li>
                         </ul>
                     </li>
-                    <li>Flujos en Power Automate, incluyendo
-                        sincronización automática entre Microsoft
-                        Planner y SQL Server con reportes enviados por
-                        correo.</li>
+                    <li>{{ translate.t('experience.somex_powerapps_2') }}</li>
                 </ul>
             </li>
-
-            <li>Impacto logrado:
+            <li><strong>{{ translate.t('experience.somex_impact_title') }}</strong>
                 <ul>
-                    <li>Optimicé procesos internos, mejoré la
-                        trazabilidad de operaciones y reduje tiempos de
-                        gestión mediante soluciones digitales
-                        implementadas en toda la organización.</li>
+                    <li>{{ translate.t('experience.somex_impact_1') }}</li>
                 </ul>
             </li>
         </ul>
     </div>
 </section>
+
+<app-goodbye></app-goodbye>

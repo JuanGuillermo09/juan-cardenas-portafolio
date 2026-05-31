@@ -1,13 +1,11 @@
- <!-- NAV -->
 <header class="header">
   <nav class="navbar container">
     <h1 class="logo">
-      <a href="#home" (click)="smoothScrollToSection('home'); closeMenu()">
+      <a routerLink="/home" (click)="closeMenu()">
         JG<span>Dev</span>
       </a>
     </h1>
 
-    <!-- Botón hamburguesa -->
     <div
       class="hamburger"
       [class.open]="menuOpen"
@@ -17,7 +15,6 @@
       <span></span>
     </div>
 
-    <!-- Overlay para cerrar menú -->
     @if (menuOpen) {
     <div
       class="menu-overlay"
@@ -28,27 +25,31 @@
     <ul
       class="nav-links"
       [class.active]="menuOpen">
-      <li><a href="#home" (click)="smoothScrollToSection('home'); closeMenu()">Inicio</a></li>
-      <li><a href="#about" (click)="smoothScrollToSection('about'); closeMenu()">Sobre mí</a></li>
-      <li><a href="#experience" (click)="smoothScrollToSection('experience'); closeMenu()">Experiencia</a></li>
-      <li><a href="#projects" (click)="smoothScrollToSection('projects'); closeMenu()">Proyectos</a></li>
-      <li><a href="#training" (click)="smoothScrollToSection('training'); closeMenu()">Formación</a></li>
-      <li><a href="#skills" (click)="smoothScrollToSection('skills'); closeMenu()">Habilidades</a></li>
-      <li><a href="#contact" (click)="smoothScrollToSection('contact'); closeMenu()">Contacto</a></li>
-      <li><a href="#goodbye" (click)="smoothScrollToSection('goodbye'); closeMenu()">¡Gracias!</a></li>
+      <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.active-scroll]="isActive('/home')" (click)="closeMenu()">{{ translate.t('header.home') }}</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active" [class.active-scroll]="isActive('/experience')" (click)="closeMenu()">{{ translate.t('header.experience') }}</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" [class.active-scroll]="isActive('/projects')" (click)="closeMenu()">{{ translate.t('header.projects') }}</a></li>
+      <li><a routerLink="/training" routerLinkActive="active" [class.active-scroll]="isActive('/training')" (click)="closeMenu()">{{ translate.t('header.training') }}</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active" [class.active-scroll]="isActive('/skills')" (click)="closeMenu()">{{ translate.t('header.skills') }}</a></li>
       <li> <a
           href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf"
           class="btn"
-          target="_blank"><strong>Mi</strong><span>CV</span></a></li>
+          target="_blank"><strong>{{ translate.t('header.cv') }}</strong><span>CV</span></a></li>
 
-      <li> <!-- 🌙☀️ BOTÓN TEMA -->
+      <li>
         <button class="theme-btn" (click)="toggleTheme()">
           <i
             class="fas"
             [class.fa-sun]="isDarkMode"
             [class.fa-moon]="!isDarkMode">
           </i>
-        </button> </li>
+        </button>
+      </li>
+
+      <li>
+        <button class="lang-btn" (click)="translate.toggleLang()">
+          {{ translate.t('header.lang') }}
+        </button>
+      </li>
 
     </ul>
   </nav>

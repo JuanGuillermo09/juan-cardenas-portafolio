@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Goodbye } from '../../layout/goodbye/goodbye';
+import { HomeTranslateService } from '../../services/translate/home-translate.service';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [Goodbye],
   templateUrl: './home.html',
   styleUrl: './home.css',
+  providers: [HomeTranslateService],
 })
 export class Home {
-  avatarUrl = 'assets/avatar/avatar.png';
-
+  translate = inject(HomeTranslateService);
 }

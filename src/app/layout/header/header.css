@@ -58,13 +58,64 @@
   border-radius: 2px;
 }
 
-/* Soporte para tema claro */
-.light-theme .nav-links li a.active {
+/* ===== TEMA CLARO ===== */
+.light-theme .header {
+  background: rgba(255, 255, 255, 0.85);
+}
+.light-theme .nav-links li a {
+  color: #111;
+}
+.light-theme .nav-links li a:hover {
+  color: #ff7f50;
+}
+.light-theme .logo a {
+  color: #111;
+}
+.light-theme .lang-btn {
+  color: #ff6b35;
+  border-color: #ff6b35;
+}
+.light-theme .lang-btn:hover {
+  background: #ff6b35;
+  color: #fff;
+}
+.light-theme .theme-btn {
   color: #ff6b35;
 }
-
-.light-theme .nav-links li a.active::after {
+.light-theme .theme-btn:hover i {
+  color: #ff7f50;
+}
+.light-theme .btn {
+  color: #fff;
+}
+.light-theme .btn:hover {
+  background-color: #f0f0f0;
+}
+.light-theme .nav-links li a.active,
+.light-theme .nav-links li a.active-scroll {
+  color: #ff6b35;
+}
+.light-theme .nav-links li a.active::after,
+.light-theme .nav-links li a.active-scroll::after {
   background: #ff6b35;
+}
+
+/* Scroll-spy active link */
+.nav-links li a.active-scroll {
+  color: #ff7f50;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links li a.active-scroll::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff7f50;
+  border-radius: 2px;
 } 
 /* ===== HAMBURGUESA ===== */
 .hamburger {
@@ -104,9 +155,26 @@
      transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(255, 127, 80, 0.4);
   background-color: #fff;
-
+  color: #111;
 }
 
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  background: #ff7f50;
+  color: #fff;
+}
 
 .theme-btn {
   background: transparent;
@@ -153,6 +221,9 @@
     gap: 15px;
     transition: right 0.3s ease;
     border-radius: 8px;
+  }
+  .light-theme .nav-links {
+    background: rgba(255, 255, 255, 0.97);
   }
   .nav-links.active {
     right: 10px;

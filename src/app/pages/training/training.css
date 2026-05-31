@@ -1,6 +1,33 @@
 /* ===== FORMACIÓN ===== */
 .training {
-  padding-top: 100px; /* Espacio para el header fijo */
+  padding-top: 100px;
+}
+
+.training-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.training-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.training-hero h1 span {
+  color: #ff7f50;
+}
+
+.training-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
 /* ===== DIPLOMA IMAGE ===== */

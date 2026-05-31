@@ -1,14 +1,27 @@
- <!-- HOME -->
 <section id="home" class="home container">
     <div class="home-left">
-        <h2>Hola, soy <span>Juan Guillermo Cardenas Miranda</span></h2>
-        <h3>Desarrollador de Software</h3>
-        <a href="#projects" class="btn">Ver proyectos</a>
-        <a href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf" class="btn" target="_blank"><strong>Mi</strong><Span>CV</Span></a>
+        <h2>{{ translate.t('home.greeting') }} <span>Juan Guillermo Cardenas Miranda</span></h2>
+        <h3>{{ translate.t('home.role') }}</h3>
+        <a href="/projects" class="btn">{{ translate.t('home.see_projects') }}</a>
+        <a href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf"
+            class="btn" target="_blank"><strong>{{ translate.t('home.cv') }}</strong><span>CV</span></a>
+        <div class="about-box">
+            <p>{{ translate.t('home.about_1') }}</p>
+            <p>{{ translate.t('home.about_2') }}</p>
+            <p>{{ translate.t('home.about_3') }}</p>
+            <p>{{ translate.t('home.about_4') }}</p>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/573001234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:tucorreo@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
 
     <div class="home-right">
         <img src="avatar/saludos/2.56 PM" class="profile-img"
-            alt="Foto Juan Guillermo">
+            alt="{{ translate.t('home.alt_photo') }}">
     </div>
 </section>
+<app-goodbye></app-goodbye>
