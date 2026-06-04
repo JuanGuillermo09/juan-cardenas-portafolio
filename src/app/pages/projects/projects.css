@@ -73,6 +73,28 @@
   transform: rotate(360deg);
 }
 
+/* Botón ver demo */
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #ff7f50, #e0673d);
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+}
+.demo-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 127, 80, 0.4);
+}
+
 /* Tema claro */
 .light-theme .github-link {
   background: #e1e4e8;
@@ -80,6 +102,9 @@
 
 .light-theme .github-link:hover {
   background: #ff6b35;
+}
+.light-theme .demo-link {
+  background: linear-gradient(135deg, #ff6b35, #e05525);
 }
 .tag {
   margin-top: 10px;

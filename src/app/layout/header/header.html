@@ -6,41 +6,37 @@
       </a>
     </h1>
 
-    <div
-      class="hamburger"
-      [class.open]="menuOpen"
-      (click)="toggleMenu()">
+    <div class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
     @if (menuOpen) {
-    <div
-      class="menu-overlay"
-      (click)="closeMenu()">
+    <div class="menu-overlay" (click)="closeMenu()">
     </div>
     }
 
-    <ul
-      class="nav-links"
-      [class.active]="menuOpen">
-      <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.active-scroll]="isActive('/home')" (click)="closeMenu()">{{ translate.t('header.home') }}</a></li>
-      <li><a routerLink="/experience" routerLinkActive="active" [class.active-scroll]="isActive('/experience')" (click)="closeMenu()">{{ translate.t('header.experience') }}</a></li>
-      <li><a routerLink="/projects" routerLinkActive="active" [class.active-scroll]="isActive('/projects')" (click)="closeMenu()">{{ translate.t('header.projects') }}</a></li>
-      <li><a routerLink="/training" routerLinkActive="active" [class.active-scroll]="isActive('/training')" (click)="closeMenu()">{{ translate.t('header.training') }}</a></li>
-      <li><a routerLink="/skills" routerLinkActive="active" [class.active-scroll]="isActive('/skills')" (click)="closeMenu()">{{ translate.t('header.skills') }}</a></li>
-      <li> <a
-          href="hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf"
-          class="btn"
-          target="_blank"><strong>{{ translate.t('header.cv') }}</strong><span>CV</span></a></li>
+    <ul class="nav-links" [class.active]="menuOpen">
+      <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+          [class.active-scroll]="isActive('/home')" (click)="closeMenu()">{{ translate.t('header.home') }}</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active" [class.active-scroll]="isActive('/experience')"
+          (click)="closeMenu()">{{ translate.t('header.experience') }}</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" [class.active-scroll]="isActive('/projects')"
+          (click)="closeMenu()">{{ translate.t('header.projects') }}</a></li>
+      <li><a routerLink="/training" routerLinkActive="active" [class.active-scroll]="isActive('/training')"
+          (click)="closeMenu()">{{ translate.t('header.training') }}</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active" [class.active-scroll]="isActive('/skills')"
+          (click)="closeMenu()">{{ translate.t('header.skills') }}</a></li>
+      <li>
+        <a [href]="getCvUrl()" class="btn" target="_blank">
+          <strong>{{ translate.t('header.cv') }}</strong><span>CV</span>
+        </a>
+      </li>
 
       <li>
         <button class="theme-btn" (click)="toggleTheme()">
-          <i
-            class="fas"
-            [class.fa-sun]="isDarkMode"
-            [class.fa-moon]="!isDarkMode">
+          <i class="fas" [class.fa-sun]="isDarkMode" [class.fa-moon]="!isDarkMode">
           </i>
         </button>
       </li>

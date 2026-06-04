@@ -24,6 +24,7 @@ export class ProjectsTranslateService {
       'projects.monetary_control': 'Proyecto en desarrollo, enfocado en integración frontend-backend y gestión de base de datos con buenas prácticas de arquitectura y seguridad.',
       'projects.tag_oop': 'POO',
       'projects.tag_pyinstaller': 'PyInstaller (generación de ejecutable .exe)',
+      'projects.ver': 'Ver DEMO',
     },
     en: {
       'projects.title': 'Personal Projects',
@@ -43,6 +44,7 @@ export class ProjectsTranslateService {
       'projects.monetary_control': 'Project in development, focused on frontend-backend integration and database management with good architecture and security practices.',
       'projects.tag_oop': 'OOP',
       'projects.tag_pyinstaller': 'PyInstaller (.exe generation)',
+      'projects.ver': 'See DEMO',
     },
   };
 

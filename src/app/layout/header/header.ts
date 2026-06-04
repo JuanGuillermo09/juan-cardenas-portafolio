@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderTranslateService } from '../../services/translate/header-translate.service';
+import { LangService } from '../../services/lang.service';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,7 @@ import { HeaderTranslateService } from '../../services/translate/header-translat
 })
 export class Header {
   translate = inject(HeaderTranslateService);
+  lang = inject(LangService);
 
   menuOpen = false;
   isDarkMode = true;
@@ -71,5 +73,12 @@ export class Header {
       document.body.classList.add('light-theme');
       localStorage.setItem('theme', 'light');
     }
+  }
+
+
+  getCvUrl(): string {
+    return this.lang.currentLang() === 'en'
+      ? 'hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda - EN.pdf'
+      : 'hoja-de-vida/Hoja de Vida Juan Guillermo Cardenas Miranda.pdf';
   }
 }
