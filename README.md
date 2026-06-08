@@ -1,59 +1,112 @@
-# JuanCardenasPortfolio
+# Portafolio — Juan Guillermo Cardenas Miranda
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+Portafolio web profesional desarrollado con **Angular 20**. Muestra la experiencia, proyectos, formación y habilidades del autor como Desarrollador Full Stack.
 
-## Development server
+## Tecnologías
 
-To start a local development server, run:
+- **Angular 20** — standalone components, signals, lazy loading
+- **TypeScript**
+- **CSS puro** — sin Tailwind (estilos propios)
+- **Font Awesome 6** — iconos
+- **Google Fonts (Poppins)** — tipografía
+- **Firebase Hosting** — despliegue
 
-```bash
-ng serve
+## Características
+
+- 6 rutas con **lazy loading** (`loadComponent`) — cada página se descarga al navegar
+- **Idioma ES/EN** con cambio instantáneo desde el header
+- **Tema claro/oscuro** persistente (`localStorage`)
+- **Meta tags dinámicos** por ruta e idioma (title, description, Open Graph)
+- **Scroll-spy** — el enlace activo del header se actualiza al scrollear
+- **Animaciones fadeInUp** escalonadas en todas las cards
+- **Página 404** personalizada
+- **Glass cards** con backdrop-filter
+
+## Estructura del proyecto
+
+```
+src/
+├── index.html
+├── main.ts
+├── styles.css                     # Estilos globales + tema claro + animaciones
+└── app/
+    ├── app.ts                     # Componente raíz (meta tags, scroll al navegar)
+    ├── app.html
+    ├── app.css
+    ├── app.routes.ts              # Rutas con lazy loading
+    ├── app.config.ts
+    ├── layout/                    # Componentes compartidos
+    │   ├── header/                # Navbar fijo con lang/theme toggle
+    │   ├── footer/                # Footer con copyright
+    │   ├── carousel/              # Carrusel de imágenes para proyectos
+    │   ├── goodbye/               # Sección de despedida final
+    │   └── scroll-top/            # Botón flotante "volver arriba"
+    ├── pages/                     # Páginas (una por ruta)
+    │   ├── home/                  # Presentación personal
+    │   ├── experience/            # Experiencia laboral
+    │   ├── projects/              # Proyectos personales
+    │   ├── training/              # Formación académica
+    │   ├── skills/                # Habilidades técnicas
+    │   └── not-found/             # 404
+    └── services/
+        ├── lang.service.ts        # Señal del idioma actual
+        └── translate/             # Servicios de traducción por componente
+            ├── header-translate.service.ts
+            ├── home-translate.service.ts
+            ├── experience-translate.service.ts
+            ├── projects-translate.service.ts
+            ├── training-translate.service.ts
+            ├── skills-translate.service.ts
+            ├── footer-translate.service.ts
+            └── goodbye-translate.service.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Rutas
 
-## Code scaffolding
+| Ruta          | Página             |
+|---------------|--------------------|
+| `/home`       | Inicio             |
+| `/experience` | Experiencia        |
+| `/projects`   | Proyectos          |
+| `/training`   | Formación          |
+| `/skills`     | Habilidades        |
+| *(404)*       | Página no encontrada |
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Descargar y ejecutar localmente
 
 ```bash
-ng generate component component-name
+# 1. Clonar el repositorio
+git clone https://github.com/JuanGuillermo09/juan-cardenas-portafolio.git
+cd juan-cardenas-portafolio
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Servidor de desarrollo (http://localhost:4200)
+npm start
+
+# 4. Build producción (se genera en dist/)
+npm run build
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Scripts disponibles
 
-```bash
-ng generate --help
-```
+| Comando         | Descripción                     |
+|-----------------|---------------------------------|
+| `npm start`     | Servidor de desarrollo          |
+| `npm run build` | Build producción                |
+| `npm run watch` | Build en modo desarrollo + watch |
+| `npm test`      | Pruebas unitarias (Karma)       |
 
-## Building
+## Despliegue
 
-To build the project run:
+El proyecto está desplegado en **Firebase Hosting**. Para desplegar una nueva versión:
 
 ```bash
 ng build
+firebase deploy
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Assets
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Cada proyecto en `public/` tiene su propia carpeta con capturas de pantalla usadas por el carrusel. Los diplomas, avatar y hoja de vida también están en `public/`.
