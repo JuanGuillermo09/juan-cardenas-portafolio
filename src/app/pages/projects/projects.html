@@ -5,34 +5,48 @@
   </div>
 
   <div class="container">
-    <div class="project-grid">
+    <!-- Proyectos Desplegados -->
+    <h2 class="section-title">{{ translate.t('projects.deployed') }}</h2>
+    <div class="project-grid deployed">
+
+      <div class="project-card glass">
+        <h3>Contacts</h3>
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/contacts/contacts-1.png" alt="Contacts" />
+        </div>
+
+        <p>{{ translate.t('projects.contacts') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">Angular 17</span>
+          <span class="tag">HTML</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">Firebase</span>
+          <a href="https://github.com/JuanGuillermo09/firebase-contacts-main.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://contacts-e5480.web.app" target="_blank" class="demo-link">{{ translate.t('projects.ver')
+            }}</a>
+        </div>
+      </div>
 
       <div class="project-card glass">
         <h3>SIGR</h3>
 
-        <app-carousel [images]="[
-        'sigr/sigr-1.png',
-        'sigr/sigr-2.png',
-        'sigr/sigr-3.png',
-        'sigr/sigr-4.png',
-        'sigr/sigr-5.png',
-        'sigr/sigr-6.png',
-        'sigr/sigr-7.png',
-        'sigr/sigr-8.png',
-        'sigr/sigr-9.png',
-        'sigr/sigr-10.png',
-        'sigr/sigr-11.png'
-      ]"></app-carousel>
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/sigr/sigr-1.png" alt="SIGR" />
+        </div>
 
         <p>{{ translate.t('projects.sigr') }}</p>
 
         <div class="project-tags">
-          <span class="tag">Angular</span>
+          <span class="tag">Angular 20</span>
           <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
           <span class="tag">TS</span>
-                    <span class="tag">RxJS</span>
-          <span class="tag">Tailwind</span>
+          <span class="tag">RxJS</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Vercel</span>
           <a href="https://github.com/JuanGuillermo09/sigr.git" target="_blank" class="github-link">
             <i class="fab fa-github"></i>
           </a>
@@ -41,18 +55,12 @@
         </div>
       </div>
 
-
       <div class="project-card glass">
         <h3>World Pizza Web</h3>
 
-        <app-carousel [images]="[
-        'world-pizza/World-Pizza-1.png',
-        'world-pizza/World-Pizza-2.png',
-        'world-pizza/World-Pizza-3.png',
-        'world-pizza/World-Pizza-4.png',
-        'world-pizza/World-Pizza-5.png',
-        'world-pizza/World-Pizza-6.png'
-      ]"></app-carousel>
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/world-pizza/World-Pizza-1.png" alt="World Pizza" />
+        </div>
 
         <p>{{ translate.t('projects.world_pizza') }}</p>
 
@@ -60,6 +68,7 @@
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">JS</span>
+          <span class="tag">Firebase Hosting</span>
           <a href="https://github.com/JuanGuillermo09/World-Pizza.git" target="_blank" class="github-link">
             <i class="fab fa-github"></i>
           </a>
@@ -69,14 +78,116 @@
       </div>
 
       <div class="project-card glass">
+        <h3>Mi Portafolio Web</h3>
+
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/mi-portafolio/Mi-Portafolio-1.png" alt="Mi Portafolio" />
+        </div>
+
+        <p>{{ translate.t('projects.portfolio') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">Angular 20</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">Font Awesome 6</span>
+          <span class="tag">Google Fonts</span>
+          <span class="tag">Firebase Hosting</span>
+          <a href="https://github.com/JuanGuillermo09/juan-cardenas-portafolio.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://juan-cardenas-portafolio.web.app/home" target="_blank" class="demo-link">{{
+            translate.t('projects.ver') }}</a>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <h3>Flappy Bird</h3>
+
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/flappy-bird/flappy-bird-1.png" alt="Flappy Bird" />
+        </div>
+
+        <p>{{ translate.t('projects.flappy_bird') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">{{ translate.t('projects.tag_oop') }}</span>
+          <span class="tag">2D Game</span>
+          <span class="tag">Firebase Hosting</span>
+          <a href="https://github.com/JuanGuillermo09/Flappy-Bird.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://flappy-bird-c3912.web.app/" target="_blank" class="demo-link">{{ translate.t('projects.ver')
+            }}</a>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <h3>Flask Web CRUD</h3>
+
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/Flask-Web-CRUD/Flask-Web-CRUD-1.png" alt="Flask Web CRUD" />
+        </div>
+
+        <p>{{ translate.t('projects.flask_crud') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS (Vanilla JS)</span>
+          <span class="tag">{{ translate.t('projects.tag_pyinstaller') }}</span>
+          <span class="tag">Render</span>
+          <a href="https://github.com/JuanGuillermo09/Flask-Web-CRUD.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://flask-web-crud.onrender.com/" target="_blank" class="demo-link">{{
+            translate.t('projects.ver') }}</a>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <h3>Calculadora</h3>
+
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/calculadora/Calculadora.png" alt="Calculadora" />
+        </div>
+
+        <p>{{ translate.t('projects.calculadora') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
+          <span class="tag">Firebase Hosting</span>
+          <a href="https://github.com/JuanGuillermo09/Calculadora.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://calculadora-7faa5.web.app/" target="_blank" class="demo-link">{{ translate.t('projects.ver')
+            }}</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Proyectos No Desplegados -->
+    <h2 class="section-title">{{ translate.t('projects.not_deployed') }}</h2>
+    <div class="project-grid">
+
+      <div class="project-card glass">
         <h3>Spotify Web</h3>
 
         <app-carousel [images]="[
-        'spotify/Spotify-1.png',
-        'spotify/Spotify-2.png',
-        'spotify/Spotify-3.png',
-        'spotify/Spotify-4.png',
-        'spotify/Spotify-5.png'
+        'no-desplegados/spotify/Spotify-1.png',
+        'no-desplegados/spotify/Spotify-2.png',
+        'no-desplegados/spotify/Spotify-3.png',
+        'no-desplegados/spotify/Spotify-4.png',
+        'no-desplegados/spotify/Spotify-5.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.spotify') }}</p>
@@ -98,11 +209,11 @@
         <h3>Mis Nota Web</h3>
 
         <app-carousel [images]="[
-        'mis-nota/Mis-notas-1.png',
-        'mis-nota/Mis-notas-2.png',
-        'mis-nota/Mis-notas-3.png',
-        'mis-nota/Mis-notas-4.png',
-        'mis-nota/Mis-notas-5.png'
+        'no-desplegados/mis-nota/Mis-notas-1.png',
+        'no-desplegados/mis-nota/Mis-notas-2.png',
+        'no-desplegados/mis-nota/Mis-notas-3.png',
+        'no-desplegados/mis-nota/Mis-notas-4.png',
+        'no-desplegados/mis-nota/Mis-notas-5.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.mis_nota') }}</p>
@@ -124,17 +235,17 @@
         <h3>AdminApp</h3>
 
         <app-carousel [images]="[
-        'AdminApp/AdminApp-1.png',
-        'AdminApp/AdminApp-2.png',
-        'AdminApp/AdminApp-3.png',
-        'AdminApp/AdminApp-4.png',
-        'AdminApp/AdminApp-5.png',
-        'AdminApp/AdminApp-6.png',
-        'AdminApp/AdminApp-7.png',
-        'AdminApp/AdminApp-8.png',
-        'AdminApp/AdminApp-9.png',
-        'AdminApp/AdminApp-10.png',
-        'AdminApp/AdminApp-11.png'
+        'no-desplegados/AdminApp/AdminApp-1.png',
+        'no-desplegados/AdminApp/AdminApp-2.png',
+        'no-desplegados/AdminApp/AdminApp-3.png',
+        'no-desplegados/AdminApp/AdminApp-4.png',
+        'no-desplegados/AdminApp/AdminApp-5.png',
+        'no-desplegados/AdminApp/AdminApp-6.png',
+        'no-desplegados/AdminApp/AdminApp-7.png',
+        'no-desplegados/AdminApp/AdminApp-8.png',
+        'no-desplegados/AdminApp/AdminApp-9.png',
+        'no-desplegados/AdminApp/AdminApp-10.png',
+        'no-desplegados/AdminApp/AdminApp-11.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.admin_app') }}</p>
@@ -153,77 +264,25 @@
       </div>
 
       <div class="project-card glass">
-        <h3>Mi Portafolio Web</h3>
-
-        <app-carousel [images]="[
-        'mi-portafolio/Mi-Portafolio-1.png',
-        'mi-portafolio/Mi-Portafolio-2.png',
-        'mi-portafolio/Mi-Portafolio-3.png',
-        'mi-portafolio/Mi-Portafolio-4.png',
-        'mi-portafolio/Mi-Portafolio-5.png',
-        'mi-portafolio/Mi-Portafolio-6.png'
-      ]"></app-carousel>
-
-        <p>{{ translate.t('projects.portfolio') }}</p>
-
-        <div class="project-tags">
-          <span class="tag">Angular</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">TS</span>
-          <a href="https://github.com/JuanGuillermo09/juan-cardenas-portafolio.git" target="_blank" class="github-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://juan-cardenas-portafolio.web.app/home" target="_blank" class="demo-link">{{
-            translate.t('projects.ver') }}</a>
-        </div>
-      </div>
-
-      <div class="project-card glass">
-        <h3>Flappy Bird</h3>
-
-        <app-carousel [images]="[
-        'flappy-bird/flappy-bird-1.png',
-        'flappy-bird/flappy-bird-2.png',
-        'flappy-bird/flappy-bird-3.png',
-        'flappy-bird/flappy-bird-4.png'
-      ]"></app-carousel>
-
-        <p>{{ translate.t('projects.flappy_bird') }}</p>
-
-        <div class="project-tags">
-          <span class="tag">Unity</span>
-          <span class="tag">C#</span>
-          <span class="tag">{{ translate.t('projects.tag_oop') }}</span>
-          <span class="tag">2D Game</span>
-          <a href="https://github.com/JuanGuillermo09/Flappy-Bird.git" target="_blank" class="github-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://flappy-bird-c3912.web.app/" target="_blank" class="demo-link">{{ translate.t('projects.ver')
-            }}</a>
-        </div>
-      </div>
-
-      <div class="project-card glass">
         <h3>BanqueSoft Cliente</h3>
 
         <app-carousel [images]="[
-        'banquesoft-cliente/banquesoft-cliente-1.png',
-        'banquesoft-cliente/banquesoft-cliente-2.png',
-        'banquesoft-cliente/banquesoft-cliente-3.png',
-        'banquesoft-cliente/banquesoft-cliente-4.png',
-        'banquesoft-cliente/banquesoft-cliente-5.png',
-        'banquesoft-cliente/banquesoft-cliente-6.png',
-        'banquesoft-cliente/banquesoft-cliente-7.png',
-        'banquesoft-cliente/banquesoft-cliente-8.png',
-        'banquesoft-cliente/banquesoft-cliente-9.png',
-        'banquesoft-cliente/banquesoft-cliente-10.png',
-        'banquesoft-cliente/banquesoft-cliente-11.png',
-        'banquesoft-cliente/banquesoft-cliente-12.png',
-        'banquesoft-cliente/banquesoft-cliente-13.png',
-        'banquesoft-cliente/banquesoft-cliente-14.png',
-        'banquesoft-cliente/banquesoft-cliente-15.png',
-        'banquesoft-cliente/banquesoft-cliente-16.png'
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-1.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-2.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-3.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-4.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-5.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-6.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-7.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-8.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-9.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-10.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-11.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-12.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-13.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-14.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-15.png',
+        'no-desplegados/banquesoft-cliente/banquesoft-cliente-16.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.banquesoft_client') }}</p>
@@ -249,31 +308,31 @@
         <h3>BanqueSoft Administrador</h3>
 
         <app-carousel [images]="[
-        'banquesoft-administrador/banquesoft-administrador-1.png',
-        'banquesoft-administrador/banquesoft-administrador-2.png',
-        'banquesoft-administrador/banquesoft-administrador-3.png',
-        'banquesoft-administrador/banquesoft-administrador-4.png',
-        'banquesoft-administrador/banquesoft-administrador-5.png',
-        'banquesoft-administrador/banquesoft-administrador-6.png',
-        'banquesoft-administrador/banquesoft-administrador-7.png',
-        'banquesoft-administrador/banquesoft-administrador-8.png',
-        'banquesoft-administrador/banquesoft-administrador-9.png',
-        'banquesoft-administrador/banquesoft-administrador-10.png',
-        'banquesoft-administrador/banquesoft-administrador-11.png',
-        'banquesoft-administrador/banquesoft-administrador-12.png',
-        'banquesoft-administrador/banquesoft-administrador-13.png',
-        'banquesoft-administrador/banquesoft-administrador-14.png',
-        'banquesoft-administrador/banquesoft-administrador-15.png',
-        'banquesoft-administrador/banquesoft-administrador-16.png',
-        'banquesoft-administrador/banquesoft-administrador-17.png',
-        'banquesoft-administrador/banquesoft-administrador-18.png',
-        'banquesoft-administrador/banquesoft-administrador-19.png',
-        'banquesoft-administrador/banquesoft-administrador-20.png',
-        'banquesoft-administrador/banquesoft-administrador-21.png',
-        'banquesoft-administrador/banquesoft-administrador-22.png',
-        'banquesoft-administrador/banquesoft-administrador-23.png',
-        'banquesoft-administrador/banquesoft-administrador-24.png',
-        'banquesoft-administrador/banquesoft-administrador-25.png'
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-1.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-2.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-3.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-4.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-5.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-6.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-7.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-8.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-9.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-10.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-11.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-12.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-13.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-14.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-15.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-16.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-17.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-18.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-19.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-20.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-21.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-22.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-23.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-24.png',
+        'no-desplegados/banquesoft-administrador/banquesoft-administrador-25.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.banquesoft_admin') }}</p>
@@ -296,49 +355,23 @@
       </div>
 
       <div class="project-card glass">
-        <h3>Flask Web CRUD</h3>
-
-        <app-carousel [images]="[
-        'Flask-Web-CRUD/Flask-Web-CRUD-1.png',
-        'Flask-Web-CRUD/Flask-Web-CRUD-2.png'
-      ]"></app-carousel>
-
-        <p>{{ translate.t('projects.flask_crud') }}</p>
-
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JS (Vanilla JS)</span>
-          <span class="tag">{{ translate.t('projects.tag_pyinstaller') }}</span>
-          <a href="https://github.com/JuanGuillermo09/Flask-Web-CRUD.git" target="_blank" class="github-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://flask-web-crud.onrender.com/" target="_blank" class="demo-link">{{
-            translate.t('projects.ver') }}</a>
-        </div>
-      </div>
-
-      <div class="project-card glass">
         <h3>Sistema de Gestión de Ofertas Dinámicas (Separatas POS)</h3>
 
         <app-carousel [images]="[
-          'separatas-POS/separatas-POS-1.png',
-          'separatas-POS/separatas-POS-2.png',
-          'separatas-POS/separatas-POS-3.png',
-          'separatas-POS/separatas-POS-4.png',
-          'separatas-POS/separatas-POS-5.png',
-          'separatas-POS/separatas-POS-6.png',
-          'separatas-POS/separatas-POS-7.png',
-          'separatas-POS/separatas-POS-8.png',
-          'separatas-POS/separatas-POS-9.png',
-          'separatas-POS/separatas-POS-10.png',
-          'separatas-POS/separatas-POS-11.png',
-          'separatas-POS/separatas-POS-12.png',
-          'separatas-POS/separatas-POS-13.png',
-          'separatas-POS/separatas-POS-14.png'
+          'no-desplegados/separatas-POS/separatas-POS-1.png',
+          'no-desplegados/separatas-POS/separatas-POS-2.png',
+          'no-desplegados/separatas-POS/separatas-POS-3.png',
+          'no-desplegados/separatas-POS/separatas-POS-4.png',
+          'no-desplegados/separatas-POS/separatas-POS-5.png',
+          'no-desplegados/separatas-POS/separatas-POS-6.png',
+          'no-desplegados/separatas-POS/separatas-POS-7.png',
+          'no-desplegados/separatas-POS/separatas-POS-8.png',
+          'no-desplegados/separatas-POS/separatas-POS-9.png',
+          'no-desplegados/separatas-POS/separatas-POS-10.png',
+          'no-desplegados/separatas-POS/separatas-POS-11.png',
+          'no-desplegados/separatas-POS/separatas-POS-12.png',
+          'no-desplegados/separatas-POS/separatas-POS-13.png',
+          'no-desplegados/separatas-POS/separatas-POS-14.png'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.separatas_pos') }}</p>
@@ -362,32 +395,17 @@
         </div>
       </div>
 
-      <div class="project-card glass">
-        <h3>Calculadora</h3>
+    </div>
 
-        <app-carousel [images]="[
-        'calculadora/Calculadora.png'
-      ]"></app-carousel>
-
-        <p>{{ translate.t('projects.calculadora') }}</p>
-
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JS</span>
-          <a href="https://github.com/JuanGuillermo09/Calculadora.git" target="_blank" class="github-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://calculadora-7faa5.web.app/" target="_blank" class="demo-link">{{ translate.t('projects.ver')
-            }}</a>
-        </div>
-      </div>
+    <!-- Proyectos en Desarrollo -->
+    <h2 class="section-title">{{ translate.t('projects.in_development') }}</h2>
+    <div class="project-grid">
 
       <div class="project-card glass">
         <h3>Monetary Control</h3>
 
         <app-carousel [images]="[
-        'monetary-control/desarrollo.avif'
+        'desarrollo/monetary-control/desarrollo.avif'
       ]"></app-carousel>
 
         <p>{{ translate.t('projects.monetary_control') }}</p>
@@ -403,6 +421,30 @@
           <a href="https://github.com/JuanGuillermo09/MonetaryControl.git" target="_blank" class="github-link">
             <i class="fab fa-github"></i>
           </a>
+          <!-- <a href="https://demo-monetary.fake" target="_blank" class="demo-link">{{ translate.t('projects.ver') }}</a> -->
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <h3>Time Control</h3>
+
+        <app-carousel [images]="[
+        'desarrollo/monetary-control/desarrollo.avif'
+      ]"></app-carousel>
+
+        <p>{{ translate.t('projects.control_tiempo') }}</p>
+
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <!-- <span class="tag">C#</span>
+          <span class="tag">SQL Server</span> -->
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">TypeScript</span>
+          <!-- <span class="tag">SweetAlert2</span> -->
+          <!-- <a href="https://github.com/JuanGuillermo09/MonetaryControl.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a> -->
           <!-- <a href="https://demo-monetary.fake" target="_blank" class="demo-link">{{ translate.t('projects.ver') }}</a> -->
         </div>
       </div>
