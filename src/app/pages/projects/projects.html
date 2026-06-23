@@ -173,38 +173,41 @@
         </div>
       </div>
 
-    </div>
 
-    <!-- Proyectos No Desplegados -->
-    <h2 class="section-title">{{ translate.t('projects.not_deployed') }}</h2>
-    <div class="project-grid">
 
       <div class="project-card glass">
         <h3>Spotify Web</h3>
 
-        <app-carousel [images]="[
-        'no-desplegados/spotify/Spotify-1.png',
-        'no-desplegados/spotify/Spotify-2.png',
-        'no-desplegados/spotify/Spotify-3.png',
-        'no-desplegados/spotify/Spotify-4.png',
-        'no-desplegados/spotify/Spotify-5.png'
-      ]"></app-carousel>
+        <div class="project-image">
+          <img loading="lazy" src="desplegados/spotify/spotify-1.png" alt="Spotify Web" />
+        </div>
 
         <p>{{ translate.t('projects.spotify') }}</p>
 
         <div class="project-tags">
-          <span class="tag">Angular</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
+          <span class="tag">Angular 16</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
           <span class="tag">TS</span>
           <span class="tag">NodeJS</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">JWT (JSON Web Tokens)</span>
+          <span class="tag">Render</span>
           <a href="https://github.com/JuanGuillermo09/SPOTIFY.git" target="_blank" class="github-link">
             <i class="fab fa-github"></i>
           </a>
-          <!-- <a href="https://demo-spotify.fake" target="_blank" class="demo-link">{{ translate.t('projects.ver') }}</a> -->
+          <a href="https://spotify-u2r9.onrender.com/auth/login" target="_blank" class="demo-link">{{
+            translate.t('projects.ver') }}</a>
         </div>
       </div>
 
+    </div>
+
+
+    <!-- Proyectos No Desplegados -->
+    <h2 class="section-title">{{ translate.t('projects.not_deployed') }}</h2>
+    <div class="project-grid">
       <div class="project-card glass">
         <h3>Mis Nota Web</h3>
 
@@ -455,9 +458,9 @@
       </div>
 
       <div class="project-card glass">
-      <h3>Sitio Secreto</h3>
+        <h3>Sitio Secreto</h3>
 
-      <app-carousel [images]="[
+        <app-carousel [images]="[
         'desarrollo/sitio-secreto/sitio-secreto-1.png',
         'desarrollo/sitio-secreto/sitio-secreto-2.png',
         'desarrollo/sitio-secreto/sitio-secreto-3.png',
@@ -470,28 +473,28 @@
         'desarrollo/sitio-secreto/sitio-secreto-10.png',
       ]"></app-carousel>
 
-      <p>{{ translate.t('projects.sitio_secreto') }}</p>
+        <p>{{ translate.t('projects.sitio_secreto') }}</p>
 
-      <div class="project-tags">
-        <span class="tag">Angular 20</span>
-        <span class="tag">Angular Material</span>
-        <!-- <span class="tag">C#</span>
+        <div class="project-tags">
+          <span class="tag">Angular 20</span>
+          <span class="tag">Angular Material</span>
+          <!-- <span class="tag">C#</span>
           <span class="tag">SQL Server</span> -->
-        <span class="tag">HTML</span>
-        <span class="tag">SCSS</span>
-        <span class="tag">TS</span>
-        <span class="tag">Mapas: Leaflet.js con OpenStreetMap</span>
-        <!-- <span class="tag">SweetAlert2</span> -->
-        <a href="https://github.com/JuanGuillermo09/sitio-secreto.git" target="_blank" class="github-link">
-          <i class="fab fa-github"></i>
-        </a>
-        <!-- <a href="https://demo-monetary.fake" target="_blank" class="demo-link">{{ translate.t('projects.ver') }}</a> -->
+          <span class="tag">HTML</span>
+          <span class="tag">SCSS</span>
+          <span class="tag">TS</span>
+          <span class="tag">Mapas: Leaflet.js con OpenStreetMap</span>
+          <!-- <span class="tag">SweetAlert2</span> -->
+          <a href="https://github.com/JuanGuillermo09/sitio-secreto.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- <a href="https://demo-monetary.fake" target="_blank" class="demo-link">{{ translate.t('projects.ver') }}</a> -->
+        </div>
       </div>
-    </div>
 
     </div>
 
-    
+
 
   </div>
 </section>
