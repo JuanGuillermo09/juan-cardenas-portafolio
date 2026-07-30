@@ -2,9 +2,11 @@
     <div class="home-left">
         <h2>{{ translate.t('home.greeting') }} <span>Juan Guillermo Cardenas Miranda</span></h2>
         <h3>{{ translate.t('home.role') }}</h3>
-        <a href="/projects" class="btn">{{ translate.t('home.see_projects') }}</a>
-        <a [href]="getCvUrl()" class="btn" target="_blank"><strong>{{
-                translate.t('home.cv') }}</strong><span>CV</span></a>
+        <div class="home-actions">
+          <a href="/projects" class="btn">{{ translate.t('home.see_projects') }}</a>
+          <a [href]="getCvUrl()" class="btn" target="_blank"><strong>{{
+                  translate.t('home.cv') }}</strong><span>CV</span></a>
+        </div>
         <div class="about-box">
             <p>{{ translate.t('home.about_1') }}</p>
             <p>{{ translate.t('home.about_2') }}</p>

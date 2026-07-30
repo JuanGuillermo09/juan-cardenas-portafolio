@@ -1,53 +1,57 @@
 .goodbye {
-  margin-top: 4rem;
-  padding: 6rem 0 4rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 80px;
+  padding: 60px 0 50px;
+  border-top: 1px solid var(--border);
 }
-
 .goodbye-content {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 24px;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 48px;
 }
-
 .goodbye-text {
   flex: 1;
 }
 .goodbye-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .goodbye-text p {
-  font-size: 1rem;
-  opacity: 0.9;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
 .goodbye-text .sub {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  opacity: 0.9;
+  margin-top: 12px;
+  font-size: 1rem;
 }
-
 .goodbye-image {
-  flex: 1;
-  text-align: right;
+  flex-shrink: 0;
+  text-align: center;
 }
 .goodbye-image img {
-  max-width: 260px;
+  max-width: 200px;
   width: 100%;
-  opacity: 0.95;
+  border-radius: var(--radius);
+  opacity: 0.9;
+  box-shadow: 0 0 0 1px rgba(255, 127, 80, 0.08);
+  transition: box-shadow 0.3s var(--ease);
+}
+.goodbye-image img:hover {
+  box-shadow: 0 0 0 2px rgba(255, 127, 80, 0.15);
 }
 
 @media (max-width: 768px) {
   .goodbye-content {
     flex-direction: column;
     text-align: center;
-  }
-  .goodbye-image {
-    text-align: center;
-    margin-top: 2rem;
+    gap: 28px;
   }
 }

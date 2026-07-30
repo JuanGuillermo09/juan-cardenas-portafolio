@@ -1,79 +1,98 @@
-/* ===== EXPERIENCE ===== */
 .experience {
-  padding-top: 100px;
+  padding-top: 80px;
 }
-
 .experience-hero {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  min-height: 90vh;
+  padding: 40px 20px;
 }
-
 .experience-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 5px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 6px;
 }
-
 .experience-hero h1 span {
-  color: #ff7f50;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-
 .experience-hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.85;
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-top: 8px;
 }
-
 .exp-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin-top: 1rem;
+  padding: 28px;
+  margin-top: 1.2rem;
+  border-left: 3px solid rgba(255, 127, 80, 0.2);
+  transition: all 0.35s var(--ease);
 }
 .exp-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(255, 127, 80, 0.4);
+  border-left-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .exp-card h3 {
-  color: #ff7f50;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 4px;
 }
-.exp-card strong {
+.exp-card > strong {
   display: block;
-  color: #9b59b6;
+  color: var(--accent);
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  font-size: 0.92rem;
 }
 .exp-card p em {
   font-style: normal;
-  font-weight: 500;
-  margin-bottom: 15px;
+  font-weight: 400;
+  margin-bottom: 14px;
   display: block;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 .exp-card ul {
   list-style: none;
   padding-left: 0;
+  margin-top: 8px;
 }
 .exp-card ul li {
   position: relative;
-  padding-left: 25px;
-  margin-bottom: 12px;
+  padding-left: 22px;
+  margin-bottom: 8px;
   line-height: 1.6;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
 }
 .exp-card ul li::before {
-  content: "•";
+  content: "";
   position: absolute;
   left: 0;
-  color: #ff7f50;
-  font-size: 1.2rem;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.exp-card ul li ul {
+  margin-top: 4px;
+}
+.exp-card ul li ul li {
+  padding-left: 20px;
+  font-size: 0.88rem;
 }
 .exp-card ul li ul li::before {
-  content: "◦";
-  color: #9b59b6;
-  font-size: 1rem;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  top: 9px;
 }
