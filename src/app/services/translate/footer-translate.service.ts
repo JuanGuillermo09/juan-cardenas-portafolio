@@ -7,9 +7,11 @@ export class FooterTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Pie de página ----------
       'footer.rights': '© {{year}} Juan Guillermo Cárdenas – Portafolio Profesional',
     },
     en: {
+      // ---------- Footer ----------
       'footer.rights': '© {{year}} Juan Guillermo Cárdenas – Professional Portfolio',
     },
   };

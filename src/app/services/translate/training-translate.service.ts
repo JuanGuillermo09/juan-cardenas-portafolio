@@ -7,11 +7,13 @@ export class TrainingTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Títulos y encabezados de la página ----------
       'training.title': 'Formación',
       'training.subtitle': 'Académica y Complementaria',
       'training.intro': 'Mi formación académica ha sido fundamental para fortalecer mis conocimientos y habilidades en el desarrollo de software. Cada etapa de aprendizaje ha contribuido a mi crecimiento profesional, permitiéndome adquirir las competencias necesarias para enfrentar desafíos tecnológicos y desarrollar soluciones innovadoras.',
       'training.complementary_title': 'Formación Complementaria y Certificaciones',
       'training.view_diploma': 'Ver diploma',
+      // ---------- Educación (tarjetas edu_1 a edu_4) ----------
       'training.edu_1_title': 'Ingeniería de Software',
       'training.edu_1_institution': 'Corporación Escuela Tecnológica del Oriente',
       'training.edu_1_location': 'Bucaramanga, Santander',
@@ -28,6 +30,7 @@ export class TrainingTranslateService {
       'training.edu_4_institution': 'Institución Educativa Eusebio Septimio Mari',
       'training.edu_4_location': 'Riohacha, La Guajira',
       'training.edu_4_date': 'Graduado en 2022',
+      // ---------- Certificaciones y formación complementaria (comp_1 a comp_5) ----------
       'training.comp_1_title': 'Fundamentos del Sistema de Gestión de Seguridad y Salud en el Trabajo',
       'training.comp_1_institution': 'SENA',
       'training.comp_1_location': 'Riohacha, La Guajira',
@@ -46,11 +49,13 @@ export class TrainingTranslateService {
       'training.comp_5_institution': 'SENA',
     },
     en: {
+      // ---------- Page titles and headings ----------
       'training.title': 'Education',
       'training.subtitle': 'Academic and Complementary',
       'training.intro': 'My academic background has been fundamental in strengthening my knowledge and skills in software development. Each learning stage has contributed to my professional growth, allowing me to acquire the necessary competencies to face technological challenges and develop innovative solutions.',
       'training.complementary_title': 'Complementary Education and Certifications',
       'training.view_diploma': 'View diploma',
+      // ---------- Education (cards edu_1 to edu_4) ----------
       'training.edu_1_title': 'Software Engineering',
       'training.edu_1_institution': 'Corporación Escuela Tecnológica del Oriente',
       'training.edu_1_location': 'Bucaramanga, Santander',
@@ -67,6 +72,7 @@ export class TrainingTranslateService {
       'training.edu_4_institution': 'Institución Educativa Eusebio Septimio Mari',
       'training.edu_4_location': 'Riohacha, La Guajira',
       'training.edu_4_date': 'Graduated in 2022',
+      // ---------- Certifications and complementary education (comp_1 to comp_5) ----------
       'training.comp_1_title': 'Fundamentals of Occupational Health and Safety Management System',
       'training.comp_1_institution': 'SENA',
       'training.comp_1_location': 'Riohacha, La Guajira',

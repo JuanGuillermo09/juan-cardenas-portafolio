@@ -7,12 +7,14 @@ export class GoodbyeTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Sección de despedida ----------
       'goodbye.title': '¡Gracias por estar aquí! 🙌',
       'goodbye.text': 'Gracias por tomarte el tiempo de ver mi portafolio. Espero que hayas disfrutado conocer un poco de mi trabajo.',
       'goodbye.sub': '¡Espero que vuelvas pronto! 🚀',
       'goodbye.alt': 'Gracias por visitar mi portafolio',
     },
     en: {
+      // ---------- Goodbye section ----------
       'goodbye.title': 'Thank you for being here! 🙌',
       'goodbye.text': 'Thank you for taking the time to view my portfolio. I hope you enjoyed learning about my work.',
       'goodbye.sub': 'See you soon! 🚀',

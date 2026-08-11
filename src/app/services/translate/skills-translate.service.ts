@@ -7,9 +7,11 @@ export class SkillsTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Títulos y encabezados de la página ----------
       'skills.title': 'Habilidades',
       'skills.subtitle': 'Técnicas y Profesionales',
       'skills.intro': 'Mi experiencia se centra en el desarrollo de aplicaciones web, integración de sistemas, gestión de bases de datos y automatización de procesos. He participado en proyectos Full Stack donde he intervenido en el análisis, diseño, desarrollo e implementación de soluciones tecnológicas, fortaleciendo competencias tanto en frontend como en backend y manteniendo un compromiso constante con el aprendizaje de nuevas tecnologías.',
+      // ---------- Nombres de las categorías ----------
       'skills.cat_frontend': 'Frontend',
       'skills.cat_backend': 'Backend',
       'skills.cat_fullstack': 'Desarrollo Full Stack',
@@ -19,16 +21,19 @@ export class SkillsTranslateService {
       'skills.cat_tools': 'Herramientas',
       'skills.cat_languages': 'Idiomas',
       'skills.cat_learning': 'Actualmente Aprendiendo',
+      // ---------- Habilidades de Frontend ----------
       'skills.responsive': 'Diseño Responsive',
       'skills.rest_api': 'Consumo de APIs REST',
       'skills.reactive_forms': 'Formularios Reactivos',
       'skills.reusable_comp': 'Componentes reutilizables',
       'skills.role_permissions': 'Gestión de roles y permisos',
+      // ---------- Habilidades de Backend ----------
       'skills.cors_config': 'Configuración CORS',
       'skills.env_vars': 'Variables de entorno',
       'skills.file_upload': 'Subida y gestión de archivos',
       'skills.mvc_arch': 'Arquitectura MVC',
       'skills.layered_arch': 'Arquitectura por capas',
+      // ---------- Habilidades Full Stack ----------
       'skills.fe_be_integration': 'Integración Frontend - Backend',
       'skills.enterprise_crud': 'CRUD Empresarial',
       'skills.enterprise_dev': 'Desarrollo de sistemas empresariales',
@@ -37,6 +42,7 @@ export class SkillsTranslateService {
       'skills.component_dev': 'Desarrollo orientado a componentes',
       'skills.restful_design': 'Diseño de APIs RESTful',
       'skills.problem_solving': 'Resolución de problemas',
+      // ---------- Habilidades de Bases de Datos ----------
       'skills.stored_procedures': 'Procedimientos almacenados',
       'skills.temp_tables': 'Tablas temporales',
       'skills.advanced_sql': 'Consultas SQL avanzadas',
@@ -44,25 +50,32 @@ export class SkillsTranslateService {
       'skills.sql_integration': 'Integración SQL Server + Aplicaciones',
       'skills.sql_optimization': 'Optimización de consultas SQL',
       'skills.db_modeling': 'Modelado de bases de datos',
+      // ---------- Habilidades de Automatización ----------
       'skills.process_automation': 'Automatización de procesos',
       'skills.excel_sql_integration': 'Integración Excel + SQL Server',
       'skills.digitization': 'Digitalización de procesos empresariales',
+      // ---------- Habilidades de Despliegue ----------
       'skills.spa_config': 'Configuración SPA',
       'skills.route_cors': 'Manejo de rutas y CORS',
       'skills.prod_environments': 'Entornos productivos',
       'skills.fullstack_deploy': 'Despliegue Full Stack',
       'skills.server_config': 'Configuración de servidores',
+      // ---------- Herramientas ----------
       'skills.version_control': 'Control de versiones',
       'skills.repo_management': 'Gestión de repositorios',
+      // ---------- Idiomas ----------
       'skills.spanish': 'Español (Nativo)',
       'skills.english': 'Inglés (En formación)',
+      // ---------- Aprendiendo ----------
       'skills.microservices': 'Microservicios',
       'skills.scalable_arch': 'Arquitecturas escalables',
     },
     en: {
+      // ---------- Page titles and headings ----------
       'skills.title': 'Skills',
       'skills.subtitle': 'Technical and Professional',
       'skills.intro': 'My experience focuses on web application development, systems integration, database management and process automation. I have participated in Full Stack projects where I have been involved in the analysis, design, development and implementation of technological solutions, strengthening skills in both frontend and backend while maintaining a constant commitment to learning new technologies.',
+      // ---------- Category names ----------
       'skills.cat_frontend': 'Frontend',
       'skills.cat_backend': 'Backend',
       'skills.cat_fullstack': 'Full Stack Development',
@@ -72,16 +85,19 @@ export class SkillsTranslateService {
       'skills.cat_tools': 'Tools',
       'skills.cat_languages': 'Languages',
       'skills.cat_learning': 'Currently Learning',
+      // ---------- Frontend skills ----------
       'skills.responsive': 'Responsive Design',
       'skills.rest_api': 'REST API Consumption',
       'skills.reactive_forms': 'Reactive Forms',
       'skills.reusable_comp': 'Reusable Components',
       'skills.role_permissions': 'Role and Permission Management',
+      // ---------- Backend skills ----------
       'skills.cors_config': 'CORS Configuration',
       'skills.env_vars': 'Environment Variables',
       'skills.file_upload': 'File Upload and Management',
       'skills.mvc_arch': 'MVC Architecture',
       'skills.layered_arch': 'Layered Architecture',
+      // ---------- Full Stack skills ----------
       'skills.fe_be_integration': 'Frontend-Backend Integration',
       'skills.enterprise_crud': 'Enterprise CRUD',
       'skills.enterprise_dev': 'Enterprise Systems Development',
@@ -90,6 +106,7 @@ export class SkillsTranslateService {
       'skills.component_dev': 'Component-Oriented Development',
       'skills.restful_design': 'RESTful API Design',
       'skills.problem_solving': 'Problem Solving',
+      // ---------- Database skills ----------
       'skills.stored_procedures': 'Stored Procedures',
       'skills.temp_tables': 'Temporary Tables',
       'skills.advanced_sql': 'Advanced SQL Queries',
@@ -97,18 +114,23 @@ export class SkillsTranslateService {
       'skills.sql_integration': 'SQL Server + Applications Integration',
       'skills.sql_optimization': 'SQL Query Optimization',
       'skills.db_modeling': 'Database Modeling',
+      // ---------- Automation skills ----------
       'skills.process_automation': 'Process Automation',
       'skills.excel_sql_integration': 'Excel + SQL Server Integration',
       'skills.digitization': 'Business Process Digitization',
+      // ---------- Deployment skills ----------
       'skills.spa_config': 'SPA Configuration',
       'skills.route_cors': 'Route and CORS Handling',
       'skills.prod_environments': 'Production Environments',
       'skills.fullstack_deploy': 'Full Stack Deployment',
       'skills.server_config': 'Server Configuration',
+      // ---------- Tools ----------
       'skills.version_control': 'Version Control',
       'skills.repo_management': 'Repository Management',
+      // ---------- Languages ----------
       'skills.spanish': 'Spanish (Native)',
       'skills.english': 'English (Learning)',
+      // ---------- Learning ----------
       'skills.microservices': 'Microservices',
       'skills.scalable_arch': 'Scalable Architectures',
     },

@@ -7,10 +7,13 @@ export class HomeTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Hero: saludo y rol ----------
       'home.greeting': 'Hola, soy',
       'home.role': 'Desarrollador de Software',
+      // ---------- Botones ----------
       'home.see_projects': 'Ver proyectos',
       'home.cv': 'Mi',
+      // ---------- Texto de "Sobre mí" ----------
       'home.about_1': 'Soy apasionado por la creación de soluciones que faciliten el trabajo de las personas y aporten valor a las organizaciones.',
       'home.about_2': 'Me caracterizo por ser una persona responsable, comprometida y con gran capacidad de aprendizaje, siempre dispuesto a asumir nuevos retos y adquirir conocimientos que fortalezcan mi crecimiento profesional.',
       'home.about_3': 'Disfruto analizar problemas, diseñar soluciones eficientes y participar en proyectos que permitan optimizar procesos y mejorar la experiencia de los usuarios.',
@@ -18,10 +21,13 @@ export class HomeTranslateService {
       'home.alt_photo': 'Foto Juan Guillermo',
     },
     en: {
+      // ---------- Hero: greeting and role ----------
       'home.greeting': 'Hi, I\'m',
       'home.role': 'Software Developer',
+      // ---------- Buttons ----------
       'home.see_projects': 'View projects',
       'home.cv': 'My',
+      // ---------- "About me" text ----------
       'home.about_1': 'I am passionate about creating solutions that make people\'s work easier and bring value to organizations.',
       'home.about_2': 'I am a responsible, committed person with a great capacity for learning, always willing to take on new challenges and acquire knowledge that strengthens my professional growth.',
       'home.about_3': 'I enjoy analyzing problems, designing efficient solutions and participating in projects that optimize processes and improve user experience.',

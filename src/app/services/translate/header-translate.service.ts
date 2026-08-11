@@ -7,6 +7,7 @@ export class HeaderTranslateService {
 
   private dict: Record<string, Record<string, string>> = {
     es: {
+      // ---------- Menú de navegación ----------
       'header.home': 'Inicio',
       'header.experience': 'Experiencia',
       'header.projects': 'Proyectos',
@@ -16,6 +17,7 @@ export class HeaderTranslateService {
       'header.lang': 'EN',
     },
     en: {
+      // ---------- Navigation menu ----------
       'header.home': 'Home',
       'header.experience': 'Experience',
       'header.projects': 'Projects',
