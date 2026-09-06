@@ -47,6 +47,10 @@ export class TrainingTranslateService {
       'training.comp_4_date': 'Abril 2024',
       'training.comp_5_title': 'English Does Work - Niveles 1 al 7',
       'training.comp_5_institution': 'SENA',
+      'training.comp_6_title': 'Desarrollo Web con PHP',
+      'training.comp_6_institution': 'SENA',
+      'training.comp_6_date': 'Septiembre 2026',
+      'training.comp_6_location': 'Girón, Santander',
     },
     en: {
       // ---------- Page titles and headings ----------
@@ -89,6 +93,10 @@ export class TrainingTranslateService {
       'training.comp_4_date': 'April 2024',
       'training.comp_5_title': 'English Does Work - Levels 1 to 7',
       'training.comp_5_institution': 'SENA',
+      'training.comp_6_title': 'Web Development with PHP',
+      'training.comp_6_institution': 'SENA',
+      'training.comp_6_date': 'September 2026',
+      'training.comp_6_location': 'Girón, Santander',
     },
   };
 
