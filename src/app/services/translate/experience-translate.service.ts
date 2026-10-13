@@ -10,7 +10,7 @@ export class ExperienceTranslateService {
       'experience.title': 'Experiencia',
       'experience.subtitle': 'Trayectoria Profesional',
       'experience.intro': 'Mi experiencia profesional ha estado enfocada en el desarrollo de software, automatización de procesos y análisis de datos. He participado en proyectos empresariales donde he diseñado, desarrollado e implementado soluciones tecnológicas que optimizan operaciones, mejoran la gestión de la información y generan valor para las organizaciones. Cada experiencia ha fortalecido mis habilidades técnicas, mi capacidad de adaptación y mi compromiso con la mejora continua.',
-      // ---------- Tarjeta 1: Desarrollador de Soluciones de IA y Ciberseguridad (LexIA, CyberGuard, SOMA) ----------
+      // ---------- Tarjeta 1: Desarrollador de Soluciones de IA y Ciberseguridad (SecureScan, LexIA, OBD2 Libre, Mundo de Rescate, CyberGuard) ----------
       'experience.desarrollador_soluciones_ia_ciberseguridad_title': 'Desarrollador de Soluciones de IA y Ciberseguridad',
       'experience.desarrollador_soluciones_ia_ciberseguridad_type': 'Proyectos personales · Desarrollo independiente',
       'experience.desarrollador_soluciones_ia_ciberseguridad_date': 'Mayo 2026 – Actualidad',
@@ -19,9 +19,9 @@ export class ExperienceTranslateService {
       'experience.highlighted_projects': 'Proyectos destacados:',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_5': 'SecureScan Web (Angular 20 + Node.js + Express + Prisma + SQLite): Plataforma de auditoría automatizada de seguridad web que analiza HTTPS/TLS, headers de seguridad, cookies, tecnologías e información expuesta, clasifica riesgos y genera Security Scores e informes PDF con referencias a OWASP, CWE, CVE e ISO/IEC.',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_1': 'LexIA Colombia (Angular + Node.js + PostgreSQL): Asistente legal con IA basado en arquitectura RAG, búsqueda semántica con embeddings, citas verificables y despliegue en producción con Render',
-      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_2': 'CyberGuard (Angular + Node.js + Python + PostgreSQL): Plataforma integral de ciberseguridad para Windows que integra Vulnerability Scanner, IDS, SIEM, gestión de alertas e incidentes y dashboard web',
-      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_3': 'SOMA (Node.js + Electron + SQLite) - en desarrollo: Asistente de escritorio con IA que permite interactuar con el computador mediante lenguaje natural, administrar archivos, ejecutar aplicaciones y automatizar tareas del sistema operativo',
+      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_6': 'OBD2 Libre (Angular + Node.js + Express + SQLite): Plataforma web gratuita y de código abierto que explica en español claro más de 18.000 códigos de falla OBD2 (DTC), con búsqueda predictiva y una ficha por código con síntomas, causas probables y pasos de diagnóstico. Incluye integración con la API de Wikipedia y un canal de sugerencias moderado por el administrador. Desplegada en Render como servicio único que sirve la API y el sitio',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_4': 'Mundo de Rescate (HTML + CSS + JavaScript): Juego educativo de programación por bloques con 4 zonas y 10 personajes por rescatar, motor de puzzles con secuencias, condicionales, bucles y laberintos. Progreso guardado en el navegador, controles táctiles y sonido generado con Web Audio API, sin librerías externas',
+      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_2': 'CyberGuard (Angular + Node.js + Python + PostgreSQL): Plataforma integral de ciberseguridad para Windows que integra Vulnerability Scanner, IDS, SIEM, gestión de alertas e incidentes y dashboard web',
       'experience.responsibilities': 'Logros:',
       'experience.desarrollador_soluciones_ia_ciberseguridad_resp_1': 'Análisis, diseño e implementación de arquitecturas full stack completas',
       'experience.desarrollador_soluciones_ia_ciberseguridad_resp_2': 'Integración de IA, seguridad, bases de datos y APIs en una única plataforma',
@@ -85,7 +85,7 @@ export class ExperienceTranslateService {
       'experience.title': 'Experience',
       'experience.subtitle': 'Professional Journey',
       'experience.intro': 'My professional experience has been focused on software development, process automation and data analysis. I have participated in business projects where I have designed, developed and implemented technological solutions that optimize operations, improve information management and generate value for organizations. Each experience has strengthened my technical skills, my adaptability and my commitment to continuous improvement.',
-      // ---------- Card 1: AI and Cybersecurity Solutions Developer (LexIA, CyberGuard, SOMA) ----------
+      // ---------- Card 1: AI and Cybersecurity Solutions Developer (SecureScan, LexIA, OBD2 Libre, Rescue World, CyberGuard) ----------
       'experience.desarrollador_soluciones_ia_ciberseguridad_title': 'Developer of AI and Cybersecurity Solutions',
       'experience.desarrollador_soluciones_ia_ciberseguridad_type': 'Personal projects · Independent development',
       'experience.desarrollador_soluciones_ia_ciberseguridad_date': 'May 2026 – Present',
@@ -94,9 +94,9 @@ export class ExperienceTranslateService {
       'experience.highlighted_projects': 'Highlighted projects:',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_5': 'SecureScan Web (Angular 20 + Node.js + Express + Prisma + SQLite): Automated web security auditing platform that analyzes HTTPS/TLS, security headers, cookies, technologies, and exposed information, classifies risks, and generates Security Scores and PDF reports with OWASP, CWE, CVE, and ISO/IEC references.',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_1': 'LexIA Colombia (Angular + Node.js + PostgreSQL): Legal assistant with AI based on RAG architecture, semantic search with embeddings, verifiable citations and production deployment on Render',
-      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_2': 'CyberGuard (Angular + Node.js + Python + PostgreSQL): Comprehensive cybersecurity platform for Windows integrating Vulnerability Scanner, IDS, SIEM, alert and incident management and a web dashboard',
-      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_3': 'SOMA (Node.js + Electron + SQLite) - in development: Desktop AI assistant that allows interacting with the computer using natural language, managing files, running applications and automating operating system tasks',
+      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_6': 'OBD2 Libre (Angular + Node.js + Express + SQLite): Free and open-source web platform that clearly explains more than 18,000 OBD2 (DTC) trouble codes in Spanish, with predictive search and a dedicated page per code including symptoms, likely causes and diagnostic steps. It also features Wikipedia API integration and a suggestion channel moderated by the administrator. Deployed on Render as a single service serving both the API and the site',
       'experience.desarrollador_soluciones_ia_ciberseguridad_proj_4': 'Rescue World (HTML + CSS + JavaScript): Educational block-based programming game with 4 zones and 10 characters to rescue, puzzle engine with sequences, conditionals, loops and mazes. Progress saved in the browser, touch controls and sound generated with the Web Audio API, no external libraries',
+      'experience.desarrollador_soluciones_ia_ciberseguridad_proj_2': 'CyberGuard (Angular + Node.js + Python + PostgreSQL): Comprehensive cybersecurity platform for Windows integrating Vulnerability Scanner, IDS, SIEM, alert and incident management and a web dashboard',
       'experience.responsibilities': 'Achievements:',
       'experience.desarrollador_soluciones_ia_ciberseguridad_resp_1': 'Analysis, design and implementation of complete full stack architectures',
       'experience.desarrollador_soluciones_ia_ciberseguridad_resp_2': 'Integration of AI, security, databases and APIs into a single platform',
