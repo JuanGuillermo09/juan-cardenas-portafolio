@@ -22,6 +22,6 @@
   box-shadow: 0 6px 28px var(--primary-glow);
 }
 
-.light-theme .scroll-top-btn {
-  background: #ff6b35;
+:host-context(.light-theme) .scroll-top-btn {
+  background: #9a3412;
 }

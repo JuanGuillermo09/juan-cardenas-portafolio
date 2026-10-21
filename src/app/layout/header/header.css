@@ -34,7 +34,7 @@
   z-index: 100;
   align-items: center;
 }
-.nav-links li a {
+.nav-links li a:not(.btn) {
   text-decoration: none;
   color: var(--text-muted);
   font-weight: 400;
@@ -43,12 +43,12 @@
   border-radius: var(--radius-sm);
   transition: all 0.25s var(--ease);
 }
-.nav-links li a:hover {
+.nav-links li a:not(.btn):hover {
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
 }
-.nav-links li a.active,
-.nav-links li a.active-scroll {
+.nav-links li a:not(.btn).active,
+.nav-links li a:not(.btn).active-scroll {
   color: var(--text);
   background: rgba(255, 127, 80, 0.08);
   font-weight: 500;
@@ -142,36 +142,39 @@
 }
 
 /* Light theme */
-.light-theme .header {
-  background: rgba(255, 255, 255, 0.7);
+:host-context(.light-theme) .header {
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px) saturate(1.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
 }
-.light-theme .nav-links li a {
-  color: rgba(0, 0, 0, 0.5);
+:host-context(.light-theme) .nav-links li a:not(.btn) {
+  color: rgba(0, 0, 0, 0.65);
 }
-.light-theme .nav-links li a:hover {
+:host-context(.light-theme) .nav-links li a:not(.btn):hover {
   color: #111;
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.05);
 }
-.light-theme .nav-links li a.active,
-.light-theme .nav-links li a.active-scroll {
-  color: #ff6b35;
-  background: rgba(255, 107, 53, 0.06);
+:host-context(.light-theme) .nav-links li a:not(.btn).active,
+:host-context(.light-theme) .nav-links li a:not(.btn).active-scroll {
+  color: #c2410c;
+  background: rgba(255, 107, 53, 0.1);
 }
-.light-theme .logo a { color: #111; }
-.light-theme .lang-btn {
-  border-color: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.6);
+:host-context(.light-theme) .logo a { color: #111; }
+:host-context(.light-theme) .lang-btn {
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.65);
 }
-.light-theme .lang-btn:hover {
+:host-context(.light-theme) .lang-btn:hover {
   border-color: #ff6b35;
-  color: #ff6b35;
+  color: #c2410c;
+  background: rgba(255, 107, 53, 0.08);
 }
-.light-theme .theme-btn { color: rgba(0, 0, 0, 0.5); }
-.light-theme .theme-btn:hover { color: #ff6b35; }
-.light-theme .btn { color: #fff; }
-.light-theme .btn:hover { color: #fff; }
+:host-context(.light-theme) .theme-btn { color: rgba(0, 0, 0, 0.6); }
+:host-context(.light-theme) .theme-btn:hover { color: #c2410c; }
+:host-context(.light-theme) .btn { color: #fff; }
+:host-context(.light-theme) .btn:hover { color: #fff; }
+:host-context(.light-theme) .menu-overlay { background: rgba(0, 0, 0, 0.25); }
 
 /* Mobile */
 @media (max-width: 900px) {
@@ -193,9 +196,9 @@
     padding: 10px 14px;
     width: 100%;
   }
-  .light-theme .nav-links {
+  :host-context(.light-theme) .nav-links {
     background: rgba(255, 255, 255, 0.97);
-    border-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.06);
   }
   .nav-links.active { right: 16px; }
   .hamburger { display: flex; }

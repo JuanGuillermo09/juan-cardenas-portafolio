@@ -105,12 +105,12 @@
   border-color: transparent;
 }
 
-.light-theme .social-links a {
-  color: rgba(0, 0, 0, 0.4);
+:host-context(.light-theme) .social-links a {
+  color: rgba(0, 0, 0, 0.6);
 }
-.light-theme .social-links a:hover {
+:host-context(.light-theme) .social-links a:hover {
   color: #fff;
-  background: #ff6b35;
+  background: #9a3412;
 }
 
 /* Responsive */

@@ -127,27 +127,34 @@ body {
 body.light-theme {
   --bg: #f6f8fc;
   --surface: rgba(255, 255, 255, 0.7);
-  --border: rgba(0, 0, 0, 0.06);
-  --border-hover: rgba(255, 107, 53, 0.15);
-  --text: #1a1a2e;
-  --text-muted: rgba(0, 0, 0, 0.35);
-  --text-secondary: rgba(0, 0, 0, 0.6);
-  --primary-glow: rgba(255, 107, 53, 0.1);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(255, 107, 53, 0.2);
+  --text: #16161f;
+  --text-muted: rgba(0, 0, 0, 0.58);
+  --text-secondary: rgba(0, 0, 0, 0.74);
+  --accent: #6d28d9;
+  --primary: #c2410c;
+  --primary-hover: #9a3412;
+  --primary-glow: rgba(194, 65, 12, 0.2);
   background-image:
     radial-gradient(ellipse at 15% 25%, rgba(255, 107, 53, 0.04) 0%, transparent 55%),
     radial-gradient(ellipse at 85% 75%, rgba(167, 139, 250, 0.03) 0%, transparent 55%);
 }
 body.light-theme ::selection {
   background: rgba(255, 107, 53, 0.2);
+  color: #16161f;
 }
 body.light-theme ::-webkit-scrollbar-track {
   background: var(--bg);
 }
+body.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(217, 79, 30, 0.35);
+}
 body.light-theme .section-title::after {
-  background: linear-gradient(90deg, #ff6b35, var(--accent));
+  background: linear-gradient(90deg, #c2410c, #6d28d9);
 }
 body.light-theme .hero h1 span {
-  background: linear-gradient(135deg, #ff6b35, var(--accent));
+  background: linear-gradient(135deg, #c2410c, #6d28d9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

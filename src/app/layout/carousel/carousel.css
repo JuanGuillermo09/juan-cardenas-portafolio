@@ -64,9 +64,9 @@
   border-radius: 3px;
 }
 
-.light-theme .indicator {
-  background: rgba(0, 0, 0, 0.1);
+:host-context(.light-theme) .indicator {
+  background: rgba(0, 0, 0, 0.15);
 }
-.light-theme .indicator.active {
-  background: #ff6b35;
+:host-context(.light-theme) .indicator.active {
+  background: #c2410c;
 }

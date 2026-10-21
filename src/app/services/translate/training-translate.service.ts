@@ -51,6 +51,10 @@ export class TrainingTranslateService {
       'training.comp_6_institution': 'SENA',
       'training.comp_6_date': 'Septiembre 2026',
       'training.comp_6_location': 'Girón, Santander',
+      'training.comp_7_title': 'Implementación de Bases de Datos NoSQL',
+      'training.comp_7_institution': 'SENA',
+      'training.comp_7_location': 'Riohacha, La Guajira',
+      'training.comp_7_date': 'Octubre 2026',
     },
     en: {
       // ---------- Page titles and headings ----------
@@ -97,6 +101,10 @@ export class TrainingTranslateService {
       'training.comp_6_institution': 'SENA',
       'training.comp_6_date': 'September 2026',
       'training.comp_6_location': 'Girón, Santander',
+      'training.comp_7_title': 'Implementation of NoSQL Databases',
+      'training.comp_7_institution': 'SENA',
+      'training.comp_7_location': 'Riohacha, La Guajira',
+      'training.comp_7_date': 'October 2026'
     },
   };
 

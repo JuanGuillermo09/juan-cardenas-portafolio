@@ -1,0 +1,182 @@
+INFORMACIÓN ADICIONAL DEL PORTAFOLIO
+====================================
+
+Este documento contiene la información que tiene el portafolio y que NO está en el documento original.
+
+
+EXPERIENCIA LABORAL ADICIONAL:
+==============================
+
+1. Desarrollador de Soluciones de IA y Ciberseguridad
+   - Tipo: Proyectos personales · Desarrollo independiente
+   - Fecha: Mayo 2026 – Actualidad
+   - Ubicación: Bello, Antioquia, Colombia · Remoto
+   - Descripción: Diseño y desarrollo de proyectos personales de alto nivel enfocados en inteligencia artificial aplicada y ciberseguridad, integrando arquitecturas modernas, buenas prácticas y despliegue en producción.
+   
+   Proyectos destacados:
+   - SecureScan Web (Angular 20 + Node.js + Express + Prisma + SQLite): Plataforma de auditoría automatizada de seguridad web que analiza HTTPS/TLS, headers de seguridad, cookies, tecnologías e información expuesta, clasifica riesgos y genera Security Scores e informes PDF con referencias a OWASP, CWE, CVE e ISO/IEC.
+   - LexIA Colombia (Angular + Node.js + PostgreSQL): Asistente legal con IA basado en arquitectura RAG, búsqueda semántica con embeddings, citas verificables y despliegue en producción con Render.
+   - CyberGuard (Angular + Node.js + Python + PostgreSQL): Plataforma integral de ciberseguridad para Windows que integra Vulnerability Scanner, IDS, SIEM, gestión de alertas e incidentes y dashboard web.
+   - SOMA (Node.js + Electron + SQLite) - en desarrollo: Asistente de escritorio con IA que permite interactuar con el computador mediante lenguaje natural, administrar archivos, ejecutar aplicaciones y automatizar tareas del sistema operativo.
+   - Mundo de Rescate (HTML + CSS + JavaScript): Juego educativo de programación por bloques con 4 zonas y 10 personajes por rescatar, motor de puzzles con secuencias, condicionales, bucles y laberintos. Progreso guardado en el navegador, controles táctiles y sonido generado con Web Audio API, sin librerías externas.
+
+   Logros:
+   - Análisis, diseño e implementación de arquitecturas full stack completas
+   - Integración de IA, seguridad, bases de datos y APIs en una única plataforma
+   - Despliegue en producción y control de versiones con Git y GitHub
+   - Desarrollo de soluciones de ciberseguridad con análisis automatizado de riesgos y vulnerabilidades
+
+
+2. Analista de Datos | Desarrollador Full Stack
+   - Empresa: Conexiones Digitales BPO S.A.S · Jornada completa
+   - Fecha: Marzo 2026 – Abril 2026 · 2 meses
+   - Ubicación: Medellín, Antioquia, Colombia · Presencial
+   - Descripción: Analista de datos enfocado en la optimización de operaciones en tiempo real dentro de entornos de alto volumen, combinando análisis de datos con desarrollo de soluciones tecnológicas.
+   
+   Logros clave:
+   - Proyecto destacado – Sistema de monitoreo en tiempo real:
+     * Desarrollo de solución full stack para monitoreo de campañas en contact center
+     * Implementación de dashboard con métricas en tiempo real (volumen de llamadas, estados, efectividad)
+     * Desarrollo de API REST con Node.js y Express
+     * Construcción de frontend con Angular y Tailwind CSS
+     * Gestión de base de datos en MySQL con Sequelize
+     * Implementación de autenticación segura con JWT
+     * Optimización de procesos operativos mediante análisis de datos en tiempo real
+
+
+3. Desarrollador Full Stack Freelance
+   - Tipo: Proyectos personales · Desarrollo independiente
+   - Fecha: Agosto 2025 – Marzo 2026 · 8 meses
+   - Ubicación: Bello, Antioquia, Colombia · Remoto
+   - Descripción: Desarrollo de proyectos tecnológicos de manera autónoma enfocados en aplicaciones web, software y videojuegos, aplicando buenas prácticas de desarrollo y arquitectura.
+   
+   Proyectos destacados:
+   - Portafolio Web (Angular): Aplicación SPA responsive con despliegue en Firebase
+   - Monetary Control (Angular + C# + SQL) - en desarrollo: Aplicación para el control monetario de gastos, ganancias y pérdidas, con registro de transacciones, cálculo de balances, reportes de ingresos y egresos y seguimiento del estado financiero. Integración frontend-backend y gestión de base de datos con SQL Server
+   - Flappy Bird (Unity + C#): Videojuego 2D con implementación de físicas, colisiones y sistema de puntuación. Build ejecutable y APK funcional
+   - Flask Web CRUD (Python + Flask + SQLite): Aplicación full stack con autenticación de usuarios y gestión de datos, desarrollada como prueba técnica para posición Frontend. CRUD completo con base de datos SQLite, validaciones frontend/backend y empaquetado como ejecutable .exe sin dependencias
+   - Separatas POS (Angular + Node.js + MySQL + Docker): Sistema full stack para gestión de promociones dinámicas en sistemas POS con arquitectura extensible de descuentos, validación de traslape de fechas, containerización completa con Docker y pipeline CI/CD con GitHub Actions
+   - Contacts (Angular + Firebase): Aplicación full stack para gestión de contactos personales con Firebase Auth, CRUD en Firestore en tiempo real, diseño responsive y sincronización automática entre dispositivos
+   
+   Logros:
+   - Gestión completa del ciclo de desarrollo (análisis, desarrollo, pruebas y despliegue)
+   - Uso de Git y GitHub para control de versiones
+   - Aprendizaje continuo de nuevas tecnologías
+
+
+4. Somex Nutrición S.A.S. - Aprendiz TIC, Área de Proyectos (YA ESTÁ EN EL DOCUMENTO ORIGINAL)
+   - Información adicional del portafolio que no está en el documento:
+   
+   Detalles técnicos adicionales:
+   - Desarrollo Web y Backend:
+     * Desarrollé e implementé un software de inspección de lockers con Angular 19, Node.js 22 y SQL Server
+     * Integré autenticación JWT, gestión de roles (guarda de seguridad, colaborador, testigo y encargado) y firmas digitales con @almothafar/angular-signature-pad
+     * Construcción de API REST en MVC, manejo de archivos con Multer y procedimientos almacenados en SQL Server
+   
+   - Despliegue y Arquitectura:
+     * Configuración del entorno productivo con IIS y PM2 para asegurar disponibilidad continua
+     * Integración de backend, frontend e imágenes mediante rutas seguras y controladas
+   
+   - Automatización con Excel y SQL:
+     * Desarrollo de macros en VBA conectadas a SQL Server permitiendo operaciones CRUD automáticas desde hojas de cálculo
+     * Creación de varios procedimientos almacenados que integran datos masivos desde Excel
+   
+   - Power Apps y Power Automate:
+     * Creación de dos aplicaciones empresariales:
+       - Control de correspondencia con firmas electrónicas y notificaciones por correo
+       - Gestión de préstamos y devoluciones de lockers con registro digital y firma del colaborador
+     * Flujos en Power Automate, incluyendo sincronización automática entre Microsoft Planner y SQL Server con reportes enviados por correo
+   
+   - Impacto logrado:
+     * Optimicé procesos internos, mejoré la trazabilidad de operaciones y reduje tiempos de gestión mediante soluciones digitales implementadas en toda la organización
+
+
+FORMACIÓN COMPLEMENTARIA ADICIONAL:
+====================================
+
+- Desarrollo Web con PHP
+  - Institución: SENA
+  - Fecha: Septiembre 2026
+  - Ubicación: Girón, Santander
+
+
+HABILIDADES TÉCNNICAS ADICIONALES:
+===================================
+
+El portafolio incluye habilidades técnicas más detalladas y organizadas por categorías:
+
+Frontend:
+- Angular 16+ (más específico que solo "Angular")
+- SCSS
+- Angular Material
+- Tailwind CSS
+- Bootstrap
+- Diseño responsive
+- Integración con APIs REST
+- Reactive Forms
+- Angular Routing
+- RxJS
+- Componentes reutilizables
+
+Backend:
+- Express.js (MVC)
+- Middleware
+- Sequelize ORM
+- Gestión de roles y permisos
+- Configuración de CORS
+- Variables de entorno
+- Carga de archivos
+
+Full Stack:
+- Arquitectura MVC
+- Arquitectura por capas
+- Integración frontend-backend
+- CRUD empresarial
+- Desarrollo empresarial
+- Dashboard en tiempo real
+- Autenticación y autorización
+- Desarrollo de componentes
+- Diseño RESTful
+- Resolución de problemas
+
+Bases de Datos:
+- Procedimientos almacenados
+- Tablas temporales
+- SQL avanzado
+- Bases de datos relacionales
+- Integración SQL
+- Optimización SQL
+- Modelado de bases de datos
+- SQL Server Management Studio (SSMS)
+
+Automatización:
+- Automatización de procesos
+- Integración Excel-SQL
+- Digitalización
+
+Despliegue:
+- Firebase Hosting
+- Configuración de SPA
+- Variables de entorno
+- Rutas y CORS
+- Entornos productivos
+- Despliegue full stack
+- Configuración de servidores
+
+Herramientas:
+- Visual Studio Code
+- Visual Studio
+- Postman
+- Figma
+- Control de versiones
+- Gestión de repositorios
+
+Idiomas:
+- Español (nativo)
+- Inglés
+
+Aprendizaje:
+- C#
+- Unity
+- Microservicios
+- Arquitectura escalable

@@ -141,21 +141,21 @@
 }
 
 /* Light theme */
-.light-theme .project-card h3 { color: #111; }
-.light-theme .tag {
+:host-context(.light-theme) .project-card h3 { color: #111; }
+:host-context(.light-theme) .tag {
   background: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.06);
-  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
 }
-.light-theme .tag:hover {
-  border-color: rgba(255, 107, 53, 0.2);
+:host-context(.light-theme) .tag:hover {
+  border-color: rgba(255, 107, 53, 0.35);
   color: #111;
 }
-.light-theme .github-link { background: rgba(0, 0, 0, 0.04); }
-.light-theme .github-link i { color: rgba(0, 0, 0, 0.4); }
-.light-theme .github-link:hover { background: #ff6b35; }
-.light-theme .github-link:hover i { color: #fff; }
-.light-theme .demo-link { background: linear-gradient(135deg, #ff6b35, #d94f1e); }
+:host-context(.light-theme) .github-link { background: rgba(0, 0, 0, 0.05); }
+:host-context(.light-theme) .github-link i { color: rgba(0, 0, 0, 0.6); }
+:host-context(.light-theme) .github-link:hover { background: #9a3412; }
+:host-context(.light-theme) .github-link:hover i { color: #fff; }
+:host-context(.light-theme) .demo-link { background: linear-gradient(135deg, #9a3412, #7c2d12); }
 
 @media (max-width: 900px) {
   .project-grid { grid-template-columns: 1fr; }
