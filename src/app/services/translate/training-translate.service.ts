@@ -55,6 +55,10 @@ export class TrainingTranslateService {
       'training.comp_7_institution': 'SENA',
       'training.comp_7_location': 'Riohacha, La Guajira',
       'training.comp_7_date': 'Octubre 2026',
+      'training.comp_8_title': 'Desarrollo Backend con Node.js y MongoDB',
+      'training.comp_8_institution': 'SENA',
+      'training.comp_8_location': 'Barranquilla, Atlantico',
+      'training.comp_8_date': 'Octubre 2026'
     },
     en: {
       // ---------- Page titles and headings ----------
@@ -104,7 +108,11 @@ export class TrainingTranslateService {
       'training.comp_7_title': 'Implementation of NoSQL Databases',
       'training.comp_7_institution': 'SENA',
       'training.comp_7_location': 'Riohacha, La Guajira',
-      'training.comp_7_date': 'October 2026'
+      'training.comp_7_date': 'October 2026',
+      'training.comp_8_title': 'Backend Development with Node.js and MongoDB',
+      'training.comp_8_institution': 'SENA',
+      'training.comp_8_location': 'Barranquilla, Atlantico',
+      'training.comp_8_date': 'October 2026'
     },
   };
 
